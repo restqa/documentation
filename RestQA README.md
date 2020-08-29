@@ -1,4 +1,4 @@
-# **RestQa**![](resources\60838103.png)
+# **RestQa**![](resources/60838103.png)
 
 ### Who We Are
 
