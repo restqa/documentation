@@ -1,5 +1,3 @@
-# ![](resources/60838103.png)
-
 # **RestQa**
 
 ### Who We Are
@@ -8,11 +6,11 @@
 
 RestQa is primarily developed by RestQa Labs holding expertise over Open Automation Testing Platform. 
 
-[Web]: https://restqa.io	"RestQa Labs Website"
-[Twitter]: https://twitter.com/restqa	"RestQa Labs Twitter Handler"
-[Email]: hello@restqa.io	"Email RestQa Labs"
+URL: <https://restqa.io>
 
+Twitter: <https://twitter.com/restqa>
 
+Email: <hello@restqa.io>
 
 ### RestQa: A Brief Introduction
 
