@@ -47,7 +47,7 @@ Next part is to get the scenario details for the Rest API that are to be automat
 
 ![TestScenario](resources/TestScenario.JPG)
 
-### 3) Build, Execute & Deliver
+#### 3) Build, Execute & Deliver
 
 ------
 
@@ -55,7 +55,7 @@ Based on the information provided, our engineers translate the instructions into
 
 ![BuildExecute](resources/BuildExecute.JPG)
 
-### 4) Deliver Result
+#### 4) Deliver Result
 
 ------
 
