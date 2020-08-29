@@ -20,13 +20,13 @@ RestQa converts manual test scenarios into automated test to ease up the testing
 
 RestQa is an open source project specifically designed to provide test automation workflow for any Rest based API. RestQa make sure to reduce the testing challenges for the consumer by either letting them manage the RestQa framework or by letting our experts handle it for them.
 
-<div style="text-align:center"><img src="resources/ExpertsSolving.JPG" /></div>
+![ExpertsSolving](resources/ExpertsSolving.JPG)
 
 ### How RestQa Operate
 
 ------
 
-##### 1) Share Product Details
+#### 1) Share Product Details
 
 RestQa required the API details over which test automation is to be performed. Details include
 
@@ -39,7 +39,7 @@ RestQa required the API details over which test automation is to be performed. D
 
 
 
-##### 2) Test Scenarios
+#### 2) Test Scenarios
 
 ------
 
@@ -47,7 +47,7 @@ Next part is to get the scenario details for the Rest API that are to be automat
 
 ![TestScenario](resources/TestScenario.JPG)
 
-#### 3) Build, Execute & Deliver
+### 3) Build, Execute & Deliver
 
 ------
 
@@ -55,7 +55,7 @@ Based on the information provided, our engineers translate the instructions into
 
 ![BuildExecute](resources/BuildExecute.JPG)
 
-#### 4) Deliver Result
+### 4) Deliver Result
 
 ------
 
