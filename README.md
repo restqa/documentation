@@ -12,6 +12,8 @@ Twitter: <https://twitter.com/restqa>
 
 Email: <hello@restqa.io>
 
+------
+
 ### RestQa: A Brief Introduction
 
 ------
@@ -21,6 +23,8 @@ RestQa converts manual test scenarios into automated test to ease up the testing
 RestQa is an open source project specifically designed to provide test automation workflow for any Rest based API. RestQa make sure to reduce the testing challenges for the consumer by either letting them manage the RestQa framework or by letting our experts handle it for them.
 
 ![ExpertsSolving](resources/ExpertsSolving.JPG)
+
+------
 
 ### How RestQa Operate
 
@@ -63,6 +67,8 @@ With in 24 hours, RestQA Automation Pipleline will generate the results and will
 
 ![Report](resources/Report.JPG)
 
+------
+
 ### RestQa: Building Components
 
 ------
@@ -81,12 +87,19 @@ The **Test Automation Pipeline** for RestQa is 4 steps process.
 
    
 
-2. **Test Suite:** Test Suites are the functional tests representing the business flow written in natural language.
+2. **Test Suite:** Test Suites are the functional tests representing the business flow written in natural language. This is covered by Cucumber (Gherkins) which follows Behavior-Driven Development (BDD) which allows expected software behaviors to be specified in a logical language that user can understand.
 
    
 
-3. **Processing:** This is where the magic happens. The data and test suite enters into the processing pipeline which is handled by **RestQApi** which is a part of RestQa Ecosystem. 
+3. **Processing:** This is where the magic happens. The data and test suite enters into the processing pipeline which is handled by **RestQApi** which is a part of RestQa Ecosystem and based on Cucumber-js.
 
    
 
 4. **Output:** Post processing, the test results are shared over the desired platform like Grafana, Slack, etc.
+
+------
+
+### Setting up RestQa
+
+------
+
