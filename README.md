@@ -121,14 +121,14 @@ Below is a sample of **restqa.yml** file for user's reference.
 
 version: 0.0.1 # Specific test case version
 metadata:
-  code: Weather1.0 # Unique code set for the test 
-  name: Weather Api # Name of the product in testing
+  code: Hotel 1.0 # Unique code set for the test 
+  name: Hotel Api # Name of the product in testing
   description: E2E test of the weather public api # Description of the product in testing
 environments: # List of environment
   - name: sandbox # Name of the environment
     default: true # Define if its the default environment
     secrets: # List of secret to use
-      apikey: 125569ABB8599458214 #This is a secret that will be passed as an environment variable
+      apikey: !env-var API_KEY #This is a secret that will be passed as an environment variable through the test suite.
     data: # Configure an external dataset
       channel: 'csv' # Type of dataset that will contain test data
       config:
@@ -136,11 +136,14 @@ environments: # List of environment
     plugins:
       - name: restqapi #Plugin name that contain details for API to be tested
         config:
-          url: https://api.openweathermap.org # Host URL of API to be tested
+          url: https://api.worldhotels.org # Host URL of API to be tested
     outputs: # List of outputs 
       - type: file #Export the result into a file
         enabled: true # Enabled the inputs
         config:
-          path: 'report-result.json' # Path of the output file which is json in this case
+          path: 'report-result.json' # Path of the output file which is json in this case	
 ```
 
+#### Dataset Preparation 
+
+The dataset contain the list of values that is required to be passed as a parameter to the test suite. This might be in form of Excel Sheet, CSV based file or Confluence data sheet. For this example, the data will be hosted in CSV file within the repository.
