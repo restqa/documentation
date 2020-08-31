@@ -107,4 +107,40 @@ Entire RestQA process falls under Continuous Integration that is implemented usi
 
 ####  Pipeline Configuration
 
-Pipeline configuration is the root file for the setup and defines how the entire testing process will operate. All user's need is **restqa.yml** file to setup the entire pipeline.
+Pipeline configuration is the root file for the setup and defines how the entire testing process will operate. All user's need is configuration file i.e. **restqa.yml** to setup the entire pipeline. The **restqa.yml** sits at the root of the repository and consists of the following part.
+
+- **Metadata Details**: The Metadata consist details about the API along with setting up unique code for it.
+- **Environment Details:** This section consist of multiple sub-sections that is related to the input data, testing API details and output reporting platform. This section defines the entire test process and needs to be configured with utmost care.
+
+Below is a sample of **restqa.yml** file for user's reference.
+
+
+
+```typescript
+---
+
+version: 0.0.1 # Specific test case version
+metadata:
+  code: Weather1.0 # Unique code set for the test 
+  name: Weather Api # Name of the product in testing
+  description: E2E test of the weather public api # Description of the product in testing
+environments: # List of environment
+  - name: sandbox # Name of the environment
+    default: true # Define if its the default environment
+    secrets: # List of secret to use
+      apikey: 125569ABB8599458214 #This is a secret that will be passed as an environment variable
+    data: # Configure an external dataset
+      channel: 'csv' # Type of dataset that will contain test data
+      config:
+        folder: 'data' # Folder were the dataset file is located
+    plugins:
+      - name: restqapi #Plugin name that contain details for API to be tested
+        config:
+          url: https://api.openweathermap.org # Host URL of API to be tested
+    outputs: # List of outputs 
+      - type: file #Export the result into a file
+        enabled: true # Enabled the inputs
+        config:
+          path: 'report-result.json' # Path of the output file which is json in this case
+```
+
