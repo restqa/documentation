@@ -91,7 +91,7 @@ The **Test Automation Pipeline** for RestQa is 4 steps process.
 
    
 
-3. **Processing:** This is where the magic happens. The data and test suite enters into the processing pipeline which is handled by **RestQApi** which is a part of RestQa Ecosystem and based on Cucumber-js.
+3. **Processing:** This is where the magic happens. The data and test suite enters into the processing pipeline which is handled by **RestQApi** which is a part of RestQa Ecosystem and based on **Cucumber-js**.
 
    
 
@@ -103,3 +103,8 @@ The **Test Automation Pipeline** for RestQa is 4 steps process.
 
 ------
 
+Entire RestQA process falls under Continuous Integration that is implemented using Bitbucket Pipeline. The Pipeline take over the entire automation process under it and keep on processing as the request appears. Let's dive into the initial setup for RestQA. 
+
+####  Pipeline Configuration
+
+Pipeline configuration is the root file for the setup and defines how the entire testing process will operate. All user's need is **restqa.yml** file to setup the entire pipeline.
