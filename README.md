@@ -161,8 +161,8 @@ As per the CSV file, the code is a field that is to be passed to the API for aut
 ```T
 Feature:
 	As an API consumer
-	I WANT TO access to the hotel location information
-	SO THAT i can build up the detail object for my application
+	I WANT TO access the hotel location information
+	SO THAT I can build up the detail object for my application
 	
 @happy
 Scenario: Retrieve successfully the information for a hotem with specific code. 
@@ -170,9 +170,29 @@ Given I have the api gateway
   And I have the path "/api/v3/hotels"
   And I have the method "GET"
   And the qyery parameter contains "hcode" as "{{ hotels.2.code }}"
-  ANd the header contains "api-key" as "79a229955abepo55694fbf4a54f44fds"
-  and the header contains "content-type" as "application/json"
+  And the header contains "api-key" as "79a229955abepo55694fbf4a54f44fds"
+  And the header contains "content-type" as "application/json"
 When I run the API
 Then I should recieve a response with the status 200
+```
+
+The above sample will be a case for successful scenario. However there are failed scenarios as well that needs to be incorporated. An example for unsuccessful scenario is.
+
+```gherkin
+Feture: |
+	As an API consumer
+	I WANT TO access the hotel location information
+	SO THAT I can build up the detail object for my application
+	
+@unhappy
+Scenario: Retrieve unsuccessfully due to missing hcode
+Given I have the api gateway
+  And I have the path "/api/v3/hotels"
+  And I have the method "GET"
+  And the header contains "accept" as "application/json"
+  And the header contains "api-key" as "79a229955abepo55694fbf4a54f44fds"
+  And the header contains "content-type" as "application/json"
+  When I run the API
+  Then I should recieve a response with a status 500
 ```
 
