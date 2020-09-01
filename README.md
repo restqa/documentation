@@ -6,11 +6,14 @@
 
 RestQa is primarily developed by RestQa Labs holding expertise over Open Automation Testing Platform. 
 
-URL: <https://restqa.io>
+---
+[![url](resources/urlIcon.png)][1][![twitter](resources/twitterIcon.png)][2][![email](resources\emailIcon.png)][3]
+---
 
-Twitter: <https://twitter.com/restqa>
 
-Email: <hello@restqa.io>
+[1]: https://restqa.io
+[2]: https://twitter.com/restqa
+[3]: mailto:hello@restqa.io
 
 ------
 
@@ -195,4 +198,8 @@ Given I have the api gateway
   When I run the API
   Then I should recieve a response with a status 500
 ```
+
+To ease things up, RestQA have provided an API Scenario Generator that can help you out to generate Test Suite based scenarios based on the curl command. 
+
+API Scenario Generator: <https://api2scenario.restqa.io/>
 
