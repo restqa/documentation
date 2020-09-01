@@ -158,7 +158,7 @@ Test suite is where all the magic happens. Test Suite follows common standard to
 
 As per the CSV file, the code is a field that is to be passed to the API for automation testing. The tester will specify the Feature along with scenario to the Test Suite.  For our example, it will be something similar to the below.
 
-```T
+```gherkin
 Feature: |
 	As an API consumer
 	I WANT TO access the hotel location information
