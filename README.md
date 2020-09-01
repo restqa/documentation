@@ -114,8 +114,6 @@ Pipeline configuration is the root file for the setup and defines how the entire
 
 Below is a sample of **restqa.yml** file for user's reference.
 
-
-
 ```typescript
 ---
 
@@ -144,6 +142,37 @@ environments: # List of environment
           path: 'report-result.json' # Path of the output file which is json in this case	
 ```
 
-#### Dataset Preparation 
+#### Data Set Preparation 
 
-The dataset contain the list of values that is required to be passed as a parameter to the test suite. This might be in form of Excel Sheet, CSV based file or Confluence data sheet. For this example, the data will be hosted in CSV file within the repository.
+The data set contain the list of values that is required to be passed as a parameter to the test suite. This might be in form of Excel Sheet, CSV based file or Confluence data sheet. For this example, the data will be hosted in CSV file within the repository.
+
+![CSVFile](resources/CSVFile.JPG)
+
+The **code** will be the id based on which the API endpoint is to be consumed. For appropriate automation testing, it is ideal to increase the number of test cases with variance of data to have appropriate test result.
+
+#### Test Suite 
+
+Test suite is where all the magic happens. Test Suite follows common standard to write Behavior Development Design based on Cucumber / Gerkin [https://cucumber.io]. The primary focus is to create automation test scenarios instead of coding. 
+
+>  **{{ hotels.2.code }}** (Hotels CSV / Row # 2 / code Column)
+
+As per the CSV file, the code is a field that is to be passed to the API for automation testing. The tester will specify the Feature along with scenario to the Test Suite.  For our example, it will be something similar to the below.
+
+```T
+Feature:
+	As an API consumer
+	I WANT TO access to the hotel location information
+	SO THAT i can build up the detail object for my application
+	
+@happy
+Scenario: Retrieve successfully the information for a hotem with specific code. 
+Given I have the api gateway
+  And I have the path "/api/v3/hotels"
+  And I have the method "GET"
+  And the qyery parameter contains "hcode" as "{{ hotels.2.code }}"
+  ANd the header contains "api-key" as "79a229955abepo55694fbf4a54f44fds"
+  and the header contains "content-type" as "application/json"
+When I run the API
+Then I should recieve a response with the status 200
+```
+
