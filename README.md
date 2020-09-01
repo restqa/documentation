@@ -159,7 +159,7 @@ Test suite is where all the magic happens. Test Suite follows common standard to
 As per the CSV file, the code is a field that is to be passed to the API for automation testing. The tester will specify the Feature along with scenario to the Test Suite.  For our example, it will be something similar to the below.
 
 ```T
-Feature:
+Feature: |
 	As an API consumer
 	I WANT TO access the hotel location information
 	SO THAT I can build up the detail object for my application
@@ -179,7 +179,7 @@ Then I should recieve a response with the status 200
 The above sample will be a case for successful scenario. However there are failed scenarios as well that needs to be incorporated. An example for unsuccessful scenario is.
 
 ```gherkin
-Feture: |
+Feature: |
 	As an API consumer
 	I WANT TO access the hotel location information
 	SO THAT I can build up the detail object for my application
