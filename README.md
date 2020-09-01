@@ -7,7 +7,7 @@
 RestQa is primarily developed by RestQa Labs holding expertise over Open Automation Testing Platform. 
 
 ---
-[![url](resources/urlIcon.png)][1][![twitter](resources/twitterIcon.png)][2][![email](resources\emailIcon.png)][3]
+[![url](resources/urlIcon.png)][1][![twitter](resources/twitterIcon.png)][2][![email](resources/emailIcon.png)][3]
 ---
 
 
