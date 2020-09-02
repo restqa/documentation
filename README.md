@@ -94,7 +94,7 @@ The **Test Automation Pipeline** for RestQa is 4 steps process.
 
    
 
-3. **Processing:** This is where the magic happens. The data and test suite enters into the processing pipeline which is handled by **RestQApi** which is a part of RestQa Ecosystem and based on **Cucumber-js**.
+3. **Processing:** This is where the magic happens. The data and test suite enters into the processing pipeline which is handled by **RestQApi** which is a part of RestQa Ecosystem and based on **Cucumber-js Gherkins**.
 
    
 
@@ -108,7 +108,7 @@ The **Test Automation Pipeline** for RestQa is 4 steps process.
 
 Entire RestQA process falls under Continuous Integration that is implemented using Bitbucket Pipeline. The Pipeline take over the entire automation process under it and keep on processing as the request appears. Let's dive into the initial setup for RestQA. 
 
-####  Pipeline Configuration
+####  1) Pipeline Configuration
 
 Pipeline configuration is the root file for the setup and defines how the entire testing process will operate. All user's need is configuration file i.e. **restqa.yml** to setup the entire pipeline. The **restqa.yml** sits at the root of the repository and consists of the following part.
 
@@ -145,7 +145,7 @@ environments: # List of environment
           path: 'report-result.json' # Path of the output file which is json in this case	
 ```
 
-#### Data Set Preparation 
+#### 2) Data Set Preparation 
 
 The data set contain the list of values that is required to be passed as a parameter to the test suite. This might be in form of Excel Sheet, CSV based file or Confluence data sheet. For this example, the data will be hosted in CSV file within the repository.
 
@@ -153,9 +153,9 @@ The data set contain the list of values that is required to be passed as a param
 
 The **code** will be the id based on which the API endpoint is to be consumed. For appropriate automation testing, it is ideal to increase the number of test cases with variance of data to have appropriate test result.
 
-#### Test Suite 
+#### 3) Test Suite 
 
-Test suite is where all the magic happens. Test Suite follows common standard to write Behavior Development Design based on Cucumber / Gerkin [https://cucumber.io]. The primary focus is to create automation test scenarios instead of coding. 
+Test suite is where the scenario descriptions are built. Test Suite follows common standard to write Behavior Development Design based on Cucumber / Gerkin [https://cucumber.io]. The primary focus is to create automation test scenarios instead of coding. 
 
 >  **{{ hotels.2.code }}** (Hotels CSV / Row # 2 / code Column)
 
@@ -199,7 +199,7 @@ Given I have the api gateway
   Then I should recieve a response with a status 500
 ```
 
-To ease things up, RestQa is providing an API Scenario Generator that can help you out to generate Test Suite based scenarios based on the curl command. 
+To ease things up for new developers, RestQa is providing an API Scenario Generator that can help you out generating Test Suite based scenarios based on the curl command. 
 
 **API Scenario Generator:** <https://api2scenario.restqa.io/>
 
@@ -212,8 +212,6 @@ The API Scenario generator take up the curl command which is formed by an endpoi
 Based on the curl command, the RestQa Test Suite prepares the test scenario by executing the command and providing an output of what can be expected in the Reporting Platform later on.
 
 ![ApiScenarioGenerator1](resources/ApiScenarioGenerator1.JPG)
-
-
 
 Based on the curl, below test scenario gets generated.
 
@@ -232,5 +230,35 @@ Then I should receive a response with the status 200
  And the response body at "ad.company" should equal "StatusCode Weekly"
  And the response body at "ad.url" should equal "http://statuscode.org/"
  And the response body at "ad.text" should equal "A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."
+```
+
+#### 4) Processing
+
+This is where the actual magic happens. The last step to initiate the test automation is to setup the processing pipelines which triggers the **Continuous Integration (CI)** tool. Based on the configurations done over pipeline, data and test suite, the RestQa triggers the CI based on the [Bitbucket Pipeline](https://bitbucket.org/blog/an-introduction-to-bitbucket-pipelines) set for the job.  Each time a change occurs in the repository, the Bitbucket Pipeline triggers a new job. 
+
+There are 3 ways to trigger the CI. It can be opted as per the requirement of how current setup is done. 
+
+**Using Github Action**
+
+In case the CI script is to be configured through [Github Action](https://github.com/restqa/restqa-action)
+
+- Create a new file in repository : `.github/workflows/e2e.yml`
+- Copy paste the information in : `github/workflows/e2e.yml`
+
+```
+name: E2E
+
+on: [push]
+
+jobs:
+  RestQa:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: restqa/restqa-action@0.0.1
+      env:
+        RESTQA_ENV: sandbox #Specify the environment to run
+      with:
+        path: 'CI_Result/' # Specify the folder where the test results are located
 ```
 
