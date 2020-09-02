@@ -199,7 +199,38 @@ Given I have the api gateway
   Then I should recieve a response with a status 500
 ```
 
-To ease things up, RestQA have provided an API Scenario Generator that can help you out to generate Test Suite based scenarios based on the curl command. 
+To ease things up, RestQa is providing an API Scenario Generator that can help you out to generate Test Suite based scenarios based on the curl command. 
 
-API Scenario Generator: <https://api2scenario.restqa.io/>
+**API Scenario Generator:** <https://api2scenario.restqa.io/>
+
+The API Scenario generator take up the curl command which is formed by an endpoint. 
+
+| Endpoint                      | Curl Command                                                 |
+| ----------------------------- | ------------------------------------------------------------ |
+| https://reqres.in/api/users/2 | curl -H "Content-type: application/json" 'https://reqres.in/api/users/2' |
+
+Based on the curl command, the RestQa Test Suite prepares the test scenario by executing the command and providing an output of what can be expected in the Reporting Platform later on.
+
+![ApiScenarioGenerator1](resources/ApiScenarioGenerator1.JPG)
+
+
+
+Based on the curl, below test scenario gets generated.
+
+```gherkin
+Given I have the api gateway
+  And I have the path "/api/users/2"
+  And I have the method "GET"
+  And the header contains "Content-type" as "application/json"
+When I run the API
+Then I should receive a response with the status 200
+ And the response body at "data.id" should equal 2
+ And the response body at "data.email" should equal "janet.weaver@reqres.in"
+ And the response body at "data.first_name" should equal "Janet"
+ And the response body at "data.last_name" should equal "Weaver"
+ And the response body at "data.avatar" should equal "https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"
+ And the response body at "ad.company" should equal "StatusCode Weekly"
+ And the response body at "ad.url" should equal "http://statuscode.org/"
+ And the response body at "ad.text" should equal "A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."
+```
 
