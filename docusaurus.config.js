@@ -2,7 +2,7 @@ module.exports = {
   title: 'RestQA',
   tagline: 'The Open automation testing platform',
   url: 'https://restqa.io',
-  baseUrl: '/',
+  baseUrl: process.env.BASE_URL || '/',
   onBrokenLinks: 'throw',
   favicon: 'https://restqa.io/assets/img/favicon.png',
   organizationName: 'restqa', // Usually your GitHub org/user name.
