@@ -17,7 +17,7 @@ jobs:
       - name: Build
         env:
           NODE_ENV: 'production'
-          BASE_URL: '/documentation'
+          BASE_URL: '/documentation/'
         run: |
           yarn build
       - name: Deploy 🚀
