@@ -9,3 +9,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: 'restqa-404-links'
       uses: restqa/404-links@v1.0.1
+      with:
+        ignore: 'https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks'
