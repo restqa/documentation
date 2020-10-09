@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[37],{92:function(e,n,o){"use strict";o.r(n);var c=o(0),a=o.n(c),t=o(7);n.default=function(){return t.a.canUseDOM&&(window.location.href="/docs/"),a.a.createElement("div",null,"Welcome to Resume Backend")}}}]);
