@@ -1,5 +1,3 @@
-sidebar_label: Google Spreadsheet
----
 Data Reuseability to avoid the manual work is what RestQA assures to its users. The test data plays a vital role for the API testing as it contain majority of the test case data that is passed as parameters to the API.
 
 Google Spreadsheet is one of the many data sources that RestQA integrates without any hassle. The parameters per call are just required to be entered in form of rows. Each rows represent a set of parameters being passed to API during a single call.
