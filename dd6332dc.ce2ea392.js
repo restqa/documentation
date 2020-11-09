@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[42],{96:function(a){a.exports=JSON.parse('{"allTagsPath":"/documentation/blog/tags","slug":"restqa","name":"restqa","count":1,"permalink":"/documentation/blog/tags/restqa"}')}}]);
