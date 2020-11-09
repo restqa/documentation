@@ -1,17 +1,17 @@
 module.exports = {
   someSidebar: {
-    'RestQA': [
+    '🚦  RestQA': [
       'introduction',
-      'concept',
+//      'concept',
       'contributing'
     ],
-    'Getting Started': [
-      'getting-started/installation',
-      'getting-started/manual-installation',
+    '🚀  Getting Started': [
+      'getting-started/quickstart',
+      //'getting-started/manual-installation',
       'getting-started/configuration',
       'getting-started/environment-variable',
     ],
-    'Test Suites': [
+    '🎯  Test Suites': [
       'tests/features',
       {
         'Scenario': [
@@ -21,18 +21,18 @@ module.exports = {
         ]
       }
     ],
-    'Data integration': [
+    '📚  Data integration': [
       'data/google-spreadsheet',
       'data/confluence',
       'data/excel'
     ],
-    'CI/CD integration': [
+    '📦  CI/CD integration': [
       'ci-cd/github-action',
       'ci-cd/gitlab-ci',
       'ci-cd/bitbucket-pipeline',
       'ci-cd/docker'
     ],
-    'Alerting': [
+    '📣  Alerting': [
       'alerting/slack',
       'alerting/discord',
       'alerting/mattermost',
@@ -40,7 +40,7 @@ module.exports = {
       'alerting/line',
       'alerting/webhook'
     ],
-    'Monitoring': [
+    '📈  Monitoring': [
       'monitoring/kibana',
       'monitoring/grafana',
     ],
@@ -50,9 +50,10 @@ module.exports = {
     'Premium ': [
 
     ],
-    'API Reference': [
+    '🖥 API Reference': [
       'api/cli',
-      'api/restqa-config'
+      'api/restqa-config',
+      'api/create-plugin'
     ]
   },
 };
