@@ -3,6 +3,45 @@ id: discord
 title: Discord
 ---
 
-This is a link to [another document.](doc3.md) This is a link to an [external page.](http://www.example.com/)
+Setting a **Discord** alerting is simple:
 
+## Pre-requisite
+
+ * 1 minute  🚀
+ * Create a discord webhook : [Guide to create a webhook on Discord](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
+ * Valid RestQA config file.
+
+## Configuration 
+
+```yaml
+environments:
+  - name: sandbox
+    outputs:
+      - type: 'discord'
+        enabled: true
+        config: 
+          url: !env-var DISCORD_WEBHOOK_URL
+          onlyFailed: false
+          showErrors: false
+          reportUrl: 'http://example.com/test-report/{uuid}'
+          username: 'bot-name'
+```
+
+### Options
+
+| *Property*   | *Description*                                                                                | *Default*          |
+|:-------------|:---------------------------------------------------------------------------------------------|:-------------------|
+| `url`        | The discord webhook url                                                                      |                    |
+| `onlyFailed` | Trigger the hook only for test failure                                                       | `true`             |
+| `showErrors` | Show the error message within discord                                                        | `false`            |
+| `reportUrl`  | The url to access to your detail test report if you have one (`{uuid}` is a placeholder)     |                    |
+| `tts`        | enable TTS for the message                                                                   | `false`            |
+| `username`   | alternative name for bot, uses the name it has in discord UI by default if nothing specified |                    |
+
+
+> About the `config.url` we recommend to use the `!env-var` keyword in order to use an [environment variable](/docs/getting-started/environment-variable) and not expose a sensitve url into your configuration.
+
+## Example
+
+![discord example](../assets/cucumber-export-discord.png)
 

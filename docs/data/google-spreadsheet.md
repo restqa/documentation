@@ -27,4 +27,3 @@ environments:
 ```
 
 Once the **restqa.yml** is updated as per the Google Spreadsheet, the Test Suite takes it up for the next process where the columns and rows are defined accordingly.
-

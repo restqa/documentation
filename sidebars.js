@@ -9,6 +9,7 @@ module.exports = {
       'getting-started/installation',
       'getting-started/manual-installation',
       'getting-started/configuration',
+      'getting-started/environment-variable',
     ],
     'Test Suites': [
       'tests/features',
