@@ -26,10 +26,12 @@ module.exports = {
           href: 'https://restqa.io',
           label: 'Products',
           position: 'right',
+        /*
         }, {
           href: 'https://restqa.io/#/blog',
           label: 'Blog',
           position: 'right',
+        */
         }, {
           href: 'https://restqa.io/#/contact',
           label: 'Contact Us',
