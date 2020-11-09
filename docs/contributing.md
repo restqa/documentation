@@ -31,5 +31,5 @@ Write a blog post and let us know the blog url we will share it on our network. 
 
 - You can fix [issues](https://github.com/restqa/restqa/issues) reported on GitHub. The [CONTRIBUTING guide](https://github.com/restqa/restqa/blob/master/CONTRIBUTING.md) will help you get your development environment ready in minutes.
 - You can add additional functionality to an existing third party integration.
-- You can create an integration for a third party service. You can find more information about creating an new plugin [here](../api/create-plugin).
+- You can create an integration for a third party service. You can find more information about creating an new plugin [here](/api/create-plugin).
 
