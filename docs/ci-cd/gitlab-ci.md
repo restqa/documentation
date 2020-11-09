@@ -29,4 +29,4 @@ RestQa:
 
 And Voila!
 
-In order to know more about the different option from the `restqa` command line,  take a look at the [RestQA CLI](/docs/api/cli) documentation
+In order to know more about the different option from the `restqa` command line,  take a look at the [RestQA CLI](/api/cli) documentation

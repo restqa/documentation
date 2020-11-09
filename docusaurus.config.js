@@ -27,12 +27,7 @@ module.exports = {
           label: 'Products',
           position: 'right',
         }, {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'right',
-        }, {
-          to: 'blog',
+          href: 'https://restqa.io/#/blog',
           label: 'Blog',
           position: 'right',
         }, {
@@ -56,10 +51,12 @@ module.exports = {
           routeBasePath: '/',
           editUrl: 'https://github.com/restqa/documentation/edit/master/',
         },
+        /*
         blog: {
           showReadingTime: true,
           editUrl:  'https://github.com/restqa/documentation/edit/master/blog/',
         },
+        */
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },

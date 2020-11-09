@@ -88,5 +88,5 @@ Once the **restqa.yml** is updated as per the Google Spreadsheet, the Test Suite
 | `endSymbol`     | how the error message within slack                             | `}}`               |
 
 
-> About the `config.id` or the `config.apikey` we recommend to use the `!env-var` keyword in order to use an [environment variable](/docs/getting-started/environment-variable) and not expose a sensitve url into your configuration.
+> About the `config.id` or the `config.apikey` we recommend to use the `!env-var` keyword in order to use an [environment variable](/getting-started/environment-variable) and not expose a sensitve url into your configuration.
 

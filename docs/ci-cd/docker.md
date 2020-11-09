@@ -15,5 +15,5 @@ And Voila!
 
 The documentation about the RestQA container is available on [Docker Hub](https://hub.docker.com/repository/docker/restqa/restqa)
 
-In order to know more about the different option from the `restqa` command line,  take a look at the [RestQA CLI](/docs/api/cli) documentation
+In order to know more about the different option from the `restqa` command line,  take a look at the [RestQA CLI](/api/cli) documentation
 

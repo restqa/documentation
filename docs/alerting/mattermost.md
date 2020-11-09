@@ -46,7 +46,7 @@ environments:
 | `displayedErrorsLimit`  | Limit the number of errors displayed in one message                                                  | `25`               |
 
 
-> About the `config.url` we recommend to use the `!env-var` keyword in order to use an [environment variable](/docs/getting-started/environment-variable) and not expose a sensitve url into your configuration.
+> About the `config.url` we recommend to use the `!env-var` keyword in order to use an [environment variable](/getting-started/environment-variable) and not expose a sensitve url into your configuration.
 
 ## Example
 

@@ -39,7 +39,7 @@ environments:
 | `username`   | alternative name for bot, uses the name it has in discord UI by default if nothing specified |                    |
 
 
-> About the `config.url` we recommend to use the `!env-var` keyword in order to use an [environment variable](/docs/getting-started/environment-variable) and not expose a sensitve url into your configuration.
+> About the `config.url` we recommend to use the `!env-var` keyword in order to use an [environment variable](/getting-started/environment-variable) and not expose a sensitve url into your configuration.
 
 ## Example
 
