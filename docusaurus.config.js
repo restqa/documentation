@@ -1,14 +1,14 @@
 module.exports = {
   title: 'RestQA',
   tagline: 'The Open automation testing platform',
-  url: 'https://restqa.io',
+  url: 'https://docs.restqa.io',
   baseUrl: process.env.BASE_URL || '/',
   onBrokenLinks: 'throw',
   favicon: 'https://restqa.io/assets/img/favicon.png',
   organizationName: 'restqa', // Usually your GitHub org/user name.
   projectName: 'restqa', // Usually your repo name.
   themeConfig: {
-    sidebarCollapsible: false,
+    sidebarCollapsible: true,
     googleAnalytics: {
        trackingID: 'UA-118770210-1'
     },
@@ -53,6 +53,7 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/',
           editUrl: 'https://github.com/restqa/documentation/edit/master/',
         },
         blog: {

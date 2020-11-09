@@ -39,7 +39,3 @@ environments:
 ## Example
 
 ![line example](../assets/cucumber-export-line.jpg)
-
-
-
-
