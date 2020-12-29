@@ -72,3 +72,42 @@ A few options are available :
 | ---------- | ----- | ------------------------------------------------------------ | --------------------------------- |
 | `--config` | `-c` | Specify the configuration file to use                        | `.restqa.yml`                     |
 | ` --env`   | `-e` | Specify the environement to pick from the configuration file | Default environment in the config |
+
+## Generate Scenario (curl)
+
+If you ready API is already developed and you want a test scenario to check the non-regression the best is just to generate a scenario from your curl command
+
+Usage : 
+
+```bash
+restqa curl https://jsonplaceholder.typicode.com/todos/1
+```
+
+Output (console):
+
+```gherkin
+Given I have the api gateway hosted on "https://jsonplaceholder.typicode.com"
+  And I have the path "/todos/1"
+  And I have the method "GET"
+When I run the API
+Then I should receive a response with the status 200
+  And the response body should be equal to:
+  """
+{
+  "userId": 1,
+  "id": 1,
+  "title": "delectus aut autem",
+  "completed": false
+}
+  """
+```
+
+If you want to export the content into a file, you will need to use the `-o` options
+
+To export the generated scenario into the file Generated Scenario into the `generated.feature`
+
+```bash
+restqa curl https://jsonplaceholder.typicode.com/todos/1 -o generated.feature
+```
+
+

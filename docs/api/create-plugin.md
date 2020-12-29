@@ -5,3 +5,5 @@ sidebar_label: create a plugin
 
 ---
 
+Coming soon
+
