@@ -80,7 +80,7 @@ If you ready API is already developed and you want a test scenario to check the 
 Usage : 
 
 ```bash
-restqa curl https://jsonplaceholder.typicode.com/todos/1
+restqa generate curl https://jsonplaceholder.typicode.com/todos/1
 ```
 
 Output (console):
@@ -107,7 +107,7 @@ If you want to export the content into a file, you will need to use the `-o` opt
 To export the generated scenario into the file Generated Scenario into the `generated.feature`
 
 ```bash
-restqa curl https://jsonplaceholder.typicode.com/todos/1 -o generated.feature
+restqa generate  curl https://jsonplaceholder.typicode.com/todos/1 -o generated.feature
 ```
 
 
