@@ -52,6 +52,7 @@ module.exports = {
     ],
     '🖥 API Reference': [
       'api/cli',
+      'api/api-reference',
       'api/restqa-config',
       'api/create-plugin'
     ]
