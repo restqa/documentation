@@ -7,7 +7,7 @@ module.exports = [{
     metadata: {
       id: 'features',
       sidebar_label: 'Gherkin References',
-      title: 'Then Describe an expected outcome'
+      title: 'Gherkin References'
     },
     jsdoc: false
   },{
