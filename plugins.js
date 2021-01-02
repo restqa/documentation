@@ -2,6 +2,7 @@ module.exports = [{
   name: "RestQapi",
   repository: "",
   docs: [{
+    /*
     input: "https://raw.githubusercontent.com/restqa/restqapi/master/README.md",
     output: "tests/restqapi/features.md",
     metadata: {
@@ -11,6 +12,7 @@ module.exports = [{
     },
     jsdoc: false
   },{
+    */
     input: "https://raw.githubusercontent.com/restqa/restqapi/master/src/restqapi/steps/1-given/index.js",
     output: "tests/restqapi/given.md",
     metadata: {
