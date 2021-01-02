@@ -9,7 +9,7 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
-    "import": "node ./bin/import.js"
+    "doc:import": "node ./bin/import.js"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.62",

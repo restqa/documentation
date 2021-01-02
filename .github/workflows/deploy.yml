@@ -16,7 +16,7 @@ jobs:
           yarn install
       - name: Import
         run: |
-          yarn import
+          yarn doc:import
       - name: Build
         env:
           NODE_ENV: 'production'
