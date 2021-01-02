@@ -1,3 +1,10 @@
+const Plugins = require('./plugins')
+
+const pluginList = Plugins.reduce((result, plugin) => {
+  result[plugin.name] = plugin.docs.map( doc => doc.output.replace('.md', ''))
+  return result
+}, {})
+
 module.exports = {
   someSidebar: {
     '🚦  RestQA': [
@@ -12,14 +19,8 @@ module.exports = {
       'getting-started/environment-variable',
     ],
     '🎯  Test Suites': [
-      'tests/features',
-      {
-        'Scenario': [
-          'tests/scenario-request',
-          'tests/scenario-trigger',
-          'tests/scenario-response'
-        ]
-      }
+      'tests/introduction',
+      pluginList
     ],
     '📚  Data integration': [
       'data/google-spreadsheet',

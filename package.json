@@ -8,7 +8,8 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "serve": "docusaurus serve"
+    "serve": "docusaurus serve",
+    "import": "node ./bin/import.js"
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.62",
@@ -29,5 +30,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "comment-parser": "^0.7.6"
   }
 }
