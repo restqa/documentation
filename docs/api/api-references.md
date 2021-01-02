@@ -19,7 +19,7 @@ Example:
 
 
 ```js
-const { Generate } = require('./src/index')
+const { Generate } = require('@restqa/restqa')
 
 async function main() {
   let result = await Generate('curl https://jsonplaceholder.typicode.com/todos/1')
