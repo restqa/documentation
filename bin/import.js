@@ -31,7 +31,8 @@ async function generate(plugin) {
           return step.tags.filter(tag => tag.tag === 'example').length
         })
         .reduce((result, step) => {
-          let category = ((step.tags.find(tag => tag.tag === 'category') || {}).name )|| 'Undefined'
+          let category = ((step.tags.find(tag => tag.tag === 'category') || {}).source )|| 'Undefined'
+          category = category.replace('@category', '')
           result[category] = result[category] || []
           result[category].push(step)
           return result
