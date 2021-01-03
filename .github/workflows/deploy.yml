@@ -3,8 +3,12 @@ on:
   push:
     branches:
     - master
-  repository_dispatch:
-    types: [doc-update]
+  workflow_dispatch:
+    inputs:
+      plugin:
+        description: 'plugin triggering the event'
+        required: false
+        default: 'none'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
