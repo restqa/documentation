@@ -1,3 +1,9 @@
+/*
+ * Script importing Documentation from other repository
+ *
+ *
+ * 
+ * */ 
 const Got = require('../node_modules/got')
 const CommentParser = require('comment-parser')
 const config = require('../plugins')
@@ -20,12 +26,26 @@ async function generate(plugin) {
     let { body } = await Got(doc.input)
     doc.content = body
     if (true === doc.jsdoc) {
-      doc.content = CommentParser(body)
+       const categories = CommentParser(body)
         .filter( step => {
           return step.tags.filter(tag => tag.tag === 'example').length
         })
-        .map(formatStepDefintion)
-        .join('\n\n---\n\n')
+        .reduce((result, step) => {
+          let category = ((step.tags.find(tag => tag.tag === 'category') || {}).name )|| 'Undefined'
+          result[category] = result[category] || []
+          result[category].push(step)
+          return result
+        }, {})
+
+        doc.content = Object.keys(categories)
+          .map(category => {
+            let head = `## ${category}`
+            let body = categories[category]
+              .map(formatStepDefintion)
+              .join('\n\n---\n\n')
+            return head + '\n\n\n' + body
+          })
+          .join('\n')
     }
     createFile(doc)
 
@@ -40,22 +60,24 @@ function formatStepDefintion(step) {
   const content = [
     step.description
   ]
-  step.tags.forEach(({tag, source}) => {
-    if (tag !== 'example') return
-    const lines = source.split('\n')
-    let example = lines[0]
-      .replace('@example', 'Example:')
-      .replace('<caption>', '*')
-      .replace('</caption>', '*')
-    content.push(example)
-    content.push('```gherkin')
-    content.push(lines.splice(1).join('\n'))
-    content.push('```')
-  })
+  step.tags
+    .forEach(({tag, source}) => {
+      if (tag !== 'example') return
+      const lines = source.split('\n')
+      let example = lines[0]
+        .replace('@example', 'Example:')
+        .replace('<caption>', '*')
+        .replace('</caption>', '*')
+      content.push(example)
+      content.push('```gherkin')
+      content.push(lines.splice(1).join('\n'))
+      content.push('```')
+    })
   return content.join('\n\n')
 }
 
 function createFile(doc) {
+  // create folder if not exist
   path.dirname(doc.output).split(path.sep)
     .reduce((pathname, dir)  => {
       pathname = path.resolve(pathname, dir)
