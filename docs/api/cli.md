@@ -58,6 +58,18 @@ restqa steps when
 restqa steps then
 ```
 
+Example: 
+
+![cli steps example](../assets/restqa-steps.gif)
+
+
+A few options are available :
+
+| Parameter  | Alias | Description                                                  | Default                           | 
+| ---------- | ----- | ------------------------------------------------------------ | --------------------------------- |
+| ` --tag`   | `-t`  | Filter the step to a specific keyword                        |                                   |
+| `--config` | `-c`  | Specify the configuration file to use                        | `.restqa.yml`                     |
+
 ## Run the test
 
 You can run the test by using the command
