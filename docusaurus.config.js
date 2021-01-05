@@ -12,6 +12,17 @@ module.exports = {
     googleAnalytics: {
        trackingID: 'UA-118770210-1'
     },
+     announcementBar: {
+      id: 'support_us', // Any value that will identify this message.
+      content:
+        'Want to support <strong>RestQA</strong>, give a star on <strong><a target="_blank" rel="noopener noreferrer" href="https://github.com/restqa/restqa">Github</a></strong>  ⭐️   ',
+      backgroundColor: '#7f00ff', // Defaults to `#fff`.
+      textColor: '#fff', // Defaults to `#000`.
+      isCloseable: true, // Defaults to `true`.
+    },
+    prism: {
+      additionalLanguages: ['gherkin'],
+    },
     colorMode: {
       disableSwitch: true
     },
