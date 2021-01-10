@@ -7,10 +7,10 @@ title: Cli
 
 ## Start a new restqa project
 
-Test Automation 
-Workflows can not only be started by triggers, webhooks, or manually via the Editor. It is also possible to start them directly via the CLI.
+As mentionned into the [getting started page](../getting-started/quickstart.md), in order to run your test automation using restqa you will need to have a `.restqa.yml` file into your folder.
+If you want to create it manually you can follow the steps [here](../getting-started/manual-installation.md).
 
-Execute a saved workflow by its ID:
+Otherwise RestQa client provides a command to pre-configure it for your project.
 
 ```bash
 restqa init
