@@ -16,6 +16,12 @@ Otherwise RestQa client provides a command to pre-configure it for your project.
 restqa init
 ```
 
+You can also initialized your project without anserwing the question by using the command : 
+
+```bash
+restqa init -y
+```
+
 ## Install a new plugin
 
 Retrieve the list of available plugin:
