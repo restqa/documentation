@@ -27,6 +27,15 @@ environments:
           username: 'bot-name'
 ```
 
+## command 
+
+if you don't want configure this part manually you can also use the command line :
+
+```
+restqa install discord
+```
+
+
 ### Options
 
 | *Property*   | *Description*                                                                                | *Default*          |
