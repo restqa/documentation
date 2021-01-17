@@ -8,7 +8,7 @@ Setting a **Slack** alerting is simple:
 ## Pre-requisite
 
  * 1 minute  🚀
- * Create a slack incoming webhook : [Create an Incoming WebHook integration ](https://scblifeapp.slack.com/apps/new/A0F7XDUAZ-incoming-webhooks)
+ * Create a slack incoming webhook : [Create an Incoming WebHook integration ](https://slack.com/intl/en-th/help/articles/115005265063-Incoming-webhooks-for-Slk)
  * Valid RestQA config file.
 
 ## Configuration 
