@@ -77,6 +77,14 @@ environments:
 
 Once the **restqa.yml** is updated as per the Google Spreadsheet, the Test Suite takes it up for the next process where the columns and rows are defined accordingly.
 
+## Command 
+
+If you don't want configure this part manually you can also use the command line :
+
+```
+restqa install google-sheet
+```
+
 ### Options
 
 | *Property*      | *Description*                                                  | *Default*          |
