@@ -7,16 +7,16 @@ title: Cli
 
 ## Start a new restqa project
 
-As mentionned into the [getting started page](../getting-started/quickstart.md), in order to run your test automation using restqa you will need to have a `.restqa.yml` file into your folder.
+As mentioned from the [getting started page](../getting-started/quickstart.md), in order to run your test automation using RestQA you will need to have a `.restqa.yml` file into your folder.
 If you want to create it manually you can follow the steps [here](../getting-started/manual-installation.md).
 
-Otherwise RestQa client provides a command to pre-configure it for your project.
+Otherwise RestQA client provides a command to pre-configure it for your project.
 
 ```bash
 restqa init
 ```
 
-You can also initialized your project without anserwing the question by using the command : 
+You can also initialized your project without answering the question by using the command : 
 
 ```bash
 restqa init -y
@@ -30,7 +30,7 @@ Retrieve the list of available plugin:
 restqa install 
 ```
 
-If you want to install the slack plugin:
+If you want to install the Slack plugin:
 
 
 ```bash
@@ -45,7 +45,7 @@ restqa install <PLUGIN>
 
 ## Step definition
 
-To get the list of different steps available for your scenario
+To get the list of different steps available for your scenario:
 
 ### Given
 
@@ -84,7 +84,7 @@ You can run the test by using the command
 restqa run
 ```
 
-A few options are available :
+A few options are available:
 
 | Parameter  | Alias | Description                                                  | Default                           | 
 | ---------- | ----- | ------------------------------------------------------------ | --------------------------------- |
@@ -93,7 +93,7 @@ A few options are available :
 
 ## Generate Scenario (curl)
 
-If you ready API is already developed and you want a test scenario to check the non-regression the best is just to generate a scenario from your curl command
+If your API is already developed and you want a test scenario to check the non-regression, the best is just to generate a scenario from your curl command.
 
 Usage : 
 
