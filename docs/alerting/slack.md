@@ -9,7 +9,7 @@ Setting a **Slack** alerting is simple:
 
  * 1 minute  🚀
  * Create a slack incoming webhook : [Create an Incoming WebHook integration ](https://slack.com/intl/en-th/help/articles/115005265063-Incoming-webhooks-for-Slk)
- * Valid RestQA config file.
+ * Valid RestQA configuration file.
 
 ## Configuration 
 
@@ -44,7 +44,7 @@ restqa install slack
 | `reportUrl`  | The url to access to your detail test report if you have one (`{uuid}` is a placeholder)     |                    |
 
 
-> About the `config.url` we recommend to use the `!env-var` keyword in order to use an [environment variable](/getting-started/environment-variable) and not expose a sensitve url into your configuration.
+> About the `config.url` we recommend to use `!env-var` keyword in order to use an [environment variable](/getting-started/environment-variable) and not expose a sensitve url into your configuration.
 
 ## Example
 
