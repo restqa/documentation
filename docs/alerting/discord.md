@@ -8,8 +8,8 @@ Setting a **Discord** alerting is simple:
 ## Pre-requisite
 
  * 1 minute  🚀
- * Create a discord webhook : [Guide to create a webhook on Discord](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
- * Valid RestQA config file.
+ * Create a Discord webhook : [Guide to create a webhook on Discord](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
+ * Valid RestQA configuration file
 
 ## Configuration 
 
@@ -27,9 +27,9 @@ environments:
           username: 'bot-name'
 ```
 
-## command 
+## Command 
 
-if you don't want configure this part manually you can also use the command line :
+If you don't want configure this part manually you can also use the command line :
 
 ```
 restqa install discord
@@ -48,7 +48,7 @@ restqa install discord
 | `username`   | alternative name for bot, uses the name it has in discord UI by default if nothing specified |                    |
 
 
-> About the `config.url` we recommend to use the `!env-var` keyword in order to use an [environment variable](/getting-started/environment-variable) and not expose a sensitve url into your configuration.
+> About the `config.url` we recommend to use `!env-var` keyword in order to use an [environment variable](/getting-started/environment-variable) and not expose a sensitve url into your configuration.
 
 ## Example
 
