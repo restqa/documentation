@@ -28,7 +28,7 @@ docker run -it --rm \
 
 ## Install with npm
 
-To install n8n globally:
+To install RestQA globally:
 
 ```bash
 npm install @restqa/restqa -g
