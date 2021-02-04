@@ -15,7 +15,7 @@ module.exports = {
     '🚀  Getting Started': [
       'getting-started/quickstart',
       //'getting-started/manual-installation',
-      'getting-started/configuration',
+      //'getting-started/configuration',
       'getting-started/environment-variable',
     ],
     '🎯  Test Suites': [
@@ -24,7 +24,7 @@ module.exports = {
     ],
     '📚  Data integration': [
       'data/google-spreadsheet',
-      'data/confluence',
+      //'data/confluence',
       'data/excel'
     ],
     '📦  CI/CD integration': [

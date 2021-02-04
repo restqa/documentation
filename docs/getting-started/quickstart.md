@@ -34,7 +34,7 @@ To install RestQA globally:
 npm install @restqa/restqa -g
 ```
 
-After the installation n8n can be started by typing in:
+After the installation RestQA can be started by typing in:
 
 ```bash
 restqa init
