@@ -1,5 +1,5 @@
 module.exports = [{
-  name: "RestQapi",
+  name: "RestQapi Plugin",
   repository: "",
   docs: [{
     input: "https://raw.githubusercontent.com/restqa/restqapi/master/docs/features.md",

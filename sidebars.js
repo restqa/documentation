@@ -14,9 +14,10 @@ module.exports = {
     ],
     '🚀  Getting Started': [
       'getting-started/quickstart',
-      //'getting-started/manual-installation',
-      //'getting-started/configuration',
+      'getting-started/installation',
+      'getting-started/configuration',
       'getting-started/environment-variable',
+      'getting-started/run',
     ],
     '🎯  Test Suites': [
       'tests/introduction',
@@ -54,8 +55,10 @@ module.exports = {
     '🖥 API Reference': [
       'api/cli',
       'api/api-reference',
-      'api/restqa-config',
-      'api/create-plugin'
+      'api/plugin-api',
+      'api/output-api',
+      //'api/restqa-config',
+      //'api/create-plugin'
     ]
   },
 };
