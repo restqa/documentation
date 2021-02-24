@@ -1,12 +1,12 @@
 ---
 id: configuration
-title: Configure your first test automation pipeline
+title: Configure your First Test Automation Pipeline
 sidebar_label: Configuration
 ---
 
 ## Config File
 
-When running `restqa` from the command line, RestQA will automatically try to resolve a config fiile named `.restqa.yml` inside the project root.
+When running `restqa` from the command line, RestQA will automatically try to resolve a configuration file named `.restqa.yml` inside the project root.
 
 The most basic config file looks like this:
 
@@ -35,7 +35,7 @@ environments:
         enabled: true
 ```
 
-You can aslo explicitly specify a confiig file to use with the `--config` CLI options (resolved relative to `cwd`)
+You can also explicitly specify a configuration file to use with the `--config` CLI options (resolved relative to `cwd`). 
 
 ```bash
 restqa run --config my-restqa.yml
@@ -49,7 +49,7 @@ restqa run --config my-restqa.yml
 * **Required:** `yes`
 
 
-Define wich YAML schema version to use to execute the tests.
+Define which YAML schema version to use to execute the test.
 Available : `0.0.1`
 
 ### metadata
@@ -57,7 +57,7 @@ Available : `0.0.1`
 * **Type:** `object`
 * **Required:** `yes`
 
-Data that helps uniquely identify the object
+Data that helps uniquely identify the object.
 
 ### metadata.code
 
@@ -71,21 +71,21 @@ Unique of the tested application.
 * **Type:** `string`
 * **Required:** `yes`
 
-Name of the tested application
+Name of the tested application.
 
 ### metadata.description
 
 * **Type:** `string`
 * **Required:** `yes`
 
-Short description of the tested application
+Short description of the tested application.
 
 ### environments
 
 * **Type:** `[object]`
 * **Required:** `yes`
 
-Define an environment for your test, since it's a list you can imagine having a different configuration per environemet
+Define an environment for your test because since it's a list you can imagine having a different configuration per environment.
 
 
 ### environments[].name
@@ -100,35 +100,35 @@ Environment name (example: local or uat)
 * **Type:** `boolean`
 * **Required:** `yes`
 
-During the execution, if a specific environement is not pass, RestQA will pick the environment with the `default` value set to `true`
+During the execution when a specific environment did not pass, RestQA will pick the environment with the `default` value set to `true`. 
 
 ### environments[].data
 
 * **Type:** `object`
 * **Required:** `no`
 
-Define the data strategy during the test execution
+Define the data strategy during the test execution.
 
 ### environments[].data.channel
 
 * **Type:** `string`
 * **Required:** `yes`
 
-Define the external data source to use as a test dataset
+Define the external data source to use as a test dataset.
 
 ### environments[].data.config
 
 * **Type:** `object`
 * **Required:** `yes`
 
-Define the specific configuration related to the external data source
+Define the specific configuration related to the external data source.
 
 ### environments[].secrets
 
 * **Type:** `object`
 * **Required:** `no`
 
-Key/Value object that will be load into the dataset in order be reused into the test scenario
+Key/Value object that will be loaded into the dataset in order be reused into the test scenarios. 
 
 ### environments[].plugins
 
@@ -142,4 +142,4 @@ Array of plugins to use. See [Plugin API](../api/plugin-api.md) for more details
 * **Type:** `outputs[]`
 * **Required:** `yes`
 
-Array of outputs to use. See [Ouputs API](../api/output-api.md) for more details on RestQA outputs.
+Array of outputs to use. Check [Ouputs API](../api/output-api.md) for more details on RestQA outputs.
