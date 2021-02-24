@@ -5,16 +5,16 @@ title: Plugin API
 
 RestQA plugins are the key processor of the test execution.
 
-The plugins are the component that will import all the built-in step definition
+The plugins are the component that will import all the built-in step definition.
 
 In order to use a specific plugin you will need to import it into your configuration file under the environment section.
 
 
 ## Simple Example
 
-* You can define RestQapi plugin for the uat environement
+* You can define RestQapi plugin for the UAT environement
 
-Using the following template:
+Using the template below:
 
 ```yaml {9-12}
 version: 0.0.1
@@ -44,13 +44,13 @@ environments:
 * **Type** `string`
 * **Required** `yes`
 
-Define the name of the plugin that need to be loaded
+Define the name of the plugin that need to be loaded. 
 
 ### config
 
 * **Type** `object`
 * **Required** `yes`
 
-Specific configuration for a plugin 
+Specific configuration for a plugin.  
 
 
