@@ -8,7 +8,6 @@ title: Cli
 ## Start a new restqa project
 
 As mentioned from the [getting started page](../getting-started/quickstart.md), in order to run your test automation using RestQA you will need to have a `.restqa.yml` file into your folder.
-If you want to create it manually you can follow the steps [here](../getting-started/manual-installation.md).
 
 Otherwise RestQA client provides a command to pre-configure it for your project.
 
