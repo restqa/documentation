@@ -11,11 +11,11 @@ Then from there you can run the command:
 restqa run
 ```
 
-The command above wiil search for `*.feature` files recursively from the root folder and execute them.
+The command above will search for `*.feature` files recursively from the root folder and execute them.
 
 ### Specify the configuration file
 
-You can also explicitly specify a config file to use with the `--config` CLI option (resolved relative to cwd):
+You can also explicitly specify a configuration file to use with the `--config` CLI option (resolved relative to cwd):
 
 ```bash
 restqa run --config my-config.yml
@@ -30,7 +30,7 @@ RESTQA_CONFIG=my-config.yml restqa run
 
 ### Specify the target environemt
 
-You can also  specify the environment to use with the `--env` CLI option:
+You can also specify the environment to use with the `--env` CLI option:
 
 ```bash
 restqa run --env uat
