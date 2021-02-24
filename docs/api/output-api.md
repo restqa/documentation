@@ -11,9 +11,9 @@ The outputs are defined per environement.
 ## Simple Example
 
 * You can define Slack as an output for your UAT
-* You can define Discord and html  as an output for your production
+* You can define Discord and html as an output for your production
 
-Using the following template:
+Using the following templates:
 
 ```yaml {14-17,25-30}
 version: 0.0.1
@@ -62,11 +62,11 @@ Define the type of output, the list of types available on the sections:  Alertin
 * **Type** `boolean`
 * **Required** `yes`
 
-Define if the current output should be enabled
+Define if the current output should be enabled.
 
 ### config
 
 * **Type** `object`
 * **Required** `condition`
 
-Specific configuration for an output (ex: the slack url, etc...)
+Specific configuration for an output (ex: the Slack url, etc...)
