@@ -5,7 +5,7 @@ title: Output API
 
 RestQA outputs extends designs from the module [@restqa/cucumber-export](https://github.com/restqa/cucumber-export)
 
-The outputs are defined per environement.
+The outputs are defined per environment.
 
 
 ## Simple Example
