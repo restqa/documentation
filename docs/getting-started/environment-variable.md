@@ -12,7 +12,7 @@ Each environment variable needs to be represented by the tag into your RestQA co
 
 `!env-var ENV_VAR` where ENV_VAR is the value need to be replace by an environement variable
 
-In the example below:
+Example below:
 
 * We configuring the `slack` output
 * Use the webhook url coming from the the `SLACK_WEBHOOK_URL` environement variable
@@ -35,11 +35,11 @@ outputs:
 
 If you have environment variable expose globally RestQA will read them automatically.
 
-In the example below:
+Example below:
 
-* Expose the `SLACK_WEBHOOK_URL` Environement variable into the current bash session
+* Expose the `SLACK_WEBHOOK_URL` Environment variable into the current bash session
 * Execute RestQA test scenario
-* The test result wil be exported to the slack incoming webhook `http://test.exampple.com`
+* The test result wil be exported to the Slack incoming webhook `http://test.exampple.com`
 
 ```bash
 export SLACK_WEBHOOK_URL=http://test.exampple.com
@@ -50,7 +50,7 @@ restqa run
 
 If you have a specific value that you don't want to expose globally you can pass it directly to the RestQA command.
 
-In the example below:
+Example below:
 
 * Passing the `SLACK_WEBHOOK_URL` Environement variable into the RestQA command while executing it.
 * The test result wil be exported to the slack incoming webhook `http://test.exampple.com`
