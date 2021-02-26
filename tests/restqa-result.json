@@ -1,0 +1,1836 @@
+{
+  "id": "e0ea8b62-7185-4318-9763-a5e738945e50",
+  "startTime": "2021-02-26T08:35:44+00:00",
+  "name": "app",
+  "key": "APP",
+  "env": "local",
+  "duration": 0.012,
+  "success": false,
+  "durationFormat": "00:00",
+  "timestamp": "2021-02-26T08:35:44+00:00",
+  "type": "testSuite",
+  "total": 1,
+  "passed": 0,
+  "failed": 1,
+  "scenarios": {
+    "passed": 0,
+    "failed": 0,
+    "skipped": 1,
+    "undefined": 0
+  },
+  "features": [
+    {
+      "keyword": "Feature",
+      "line": 2,
+      "id": "validator",
+      "tags": [],
+      "uri": "../../../tests/doc.feature",
+      "elements": [
+        {
+          "id": "validator;here",
+          "keyword": "Scenario",
+          "line": 5,
+          "name": "here",
+          "tags": [],
+          "type": "scenario",
+          "steps": [
+            {
+              "keyword": "Before",
+              "hidden": true,
+              "match": {
+                "location": "../restqapi/src/restqapi/hooks.js:14"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 7000000
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 8,
+              "name": "I have the api gateway",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 1000000
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 12,
+              "name": "I have the api gateway hosted on \"https://api.example.com\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 1000000
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 16,
+              "name": "I want to ignore the ssl certificate",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 20,
+              "name": "I have the path \"/users/1\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 21,
+              "name": "I have the path \"/users/1/addresses\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 22,
+              "name": "I have the path \"/users/{{ userId }}/addresses\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 26,
+              "name": "I have the method \"PATCH\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 1000000
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 30,
+              "name": "I send a \"GET\" request to \"/customers\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 31,
+              "name": "I send a \"POST\" request to \"/customers\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 32,
+              "name": "I send a \"PUT\" request to \"/customers/1234\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 33,
+              "name": "I send a \"DELETE\" request to \"/customers/1234\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 37,
+              "name": "the header contains \"Content-Type\" as \"application/json\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 38,
+              "name": "the header contains \"Accept-language\" as \"en\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 39,
+              "name": "the header contains \"user-agent\" as \"curl\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 43,
+              "name": "the header contains \"Accept-language\" as {{ language }}",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 44,
+              "name": "the header contains \"user-agent\" as {{ currentUserAgent }}",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [
+                {
+                  "rows": [
+                    {
+                      "cells": [
+                        "Content-Type",
+                        "application/json"
+                      ]
+                    },
+                    {
+                      "cells": [
+                        "Accept-Language",
+                        "en"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "keyword": "Given ",
+              "line": 48,
+              "name": "I add the headers:",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [
+                {
+                  "rows": [
+                    {
+                      "cells": [
+                        "Content-Type",
+                        "{{contentType}}"
+                      ]
+                    },
+                    {
+                      "cells": [
+                        "Accept-Language",
+                        "{{ language }}"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "keyword": "Given ",
+              "line": 54,
+              "name": "I add the headers:",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 60,
+              "name": "I have the bearer token \"xxx-yyy-zzz\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 64,
+              "name": "I have the bearer token {{ token }}",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 68,
+              "name": "I use basic access authentication using the username \"foo\" and the password \"bar\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 69,
+              "name": "I have the basic auth user \"foo\" pass \"bar\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 70,
+              "name": "I use basic auth with \"foo\" / \"bar\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 74,
+              "name": "I use basic access authentication using the username \"foo\" and the password \"bar\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 75,
+              "name": "I have the basic auth user \"foo\" pass \"bar\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 76,
+              "name": "I use basic auth with \"foo\" / \"bar\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 80,
+              "name": "the query parameter contains \"sort\" as \"price\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 81,
+              "name": "the query parameter contains \"name\" as \"john\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 85,
+              "name": "the query parameter contains \"limit\" as 10",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 86,
+              "name": "the query parameter contains \"offset\" as 30",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 90,
+              "name": "the query parameter contains \"sort\" as {{ price }}",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 91,
+              "name": "the query parameter contains \"name\" as {{ name }}",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [
+                {
+                  "rows": [
+                    {
+                      "cells": [
+                        "sort",
+                        "price"
+                      ]
+                    },
+                    {
+                      "cells": [
+                        "name",
+                        "john"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "keyword": "Given ",
+              "line": 95,
+              "name": "I add the query string parameters:",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 1000000
+              }
+            },
+            {
+              "arguments": [
+                {
+                  "rows": [
+                    {
+                      "cells": [
+                        "sort",
+                        "{{ sort }}"
+                      ]
+                    },
+                    {
+                      "cells": [
+                        "name",
+                        "{{ name }}"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "keyword": "Given ",
+              "line": 101,
+              "name": "I add the query string parameters:",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 107,
+              "name": "the payload contains \"firstname\" as \"john\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 108,
+              "name": "the payload contains \"lastname\" as \"doe\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 109,
+              "name": "the payload contains \"people.lastname\" as \"doe\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 0
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 113,
+              "name": "the payload contains \"limit\" as 10",
+              "result": {
+                "status": "ambiguous"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 114,
+              "name": "the payload contains \"offset\" as 30",
+              "result": {
+                "status": "ambiguous"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 115,
+              "name": "the payload contains \"page.offset\" as 30",
+              "result": {
+                "status": "ambiguous"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 119,
+              "name": "the payload contains \"size\" as 1.1",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 120,
+              "name": "the payload contains \"weight\" as 1.0",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 121,
+              "name": "the payload contains \"body.weight\" as 1.0",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 125,
+              "name": "the payload contains \"sort\" as {{ price }}",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 126,
+              "name": "the payload contains \"name\" as {{ name }}",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 127,
+              "name": "the payload contains \"list.name\" as {{ name }}",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 131,
+              "name": "the payload contains \"firstname\" as null",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 132,
+              "name": "the payload contains \"user.firstname\" as null",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 136,
+              "name": "the payload contains \"active\" as true",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 137,
+              "name": "the payload contains \"user.active\" as true",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 141,
+              "name": "the payload contains \"active\" as false",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 142,
+              "name": "the payload contains \"user.active\" as false",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 146,
+              "name": "the payload contains \"list\" as empty array",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 147,
+              "name": "the payload contains \"user.list\" as empty array",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [
+                {
+                  "rows": [
+                    {
+                      "cells": [
+                        "firstname",
+                        "john"
+                      ]
+                    },
+                    {
+                      "cells": [
+                        "lastname",
+                        "doe"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "keyword": "Given ",
+              "line": 151,
+              "name": "I add the request body:",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [
+                {
+                  "rows": [
+                    {
+                      "cells": [
+                        "firstname",
+                        "{{ firstName }}"
+                      ]
+                    },
+                    {
+                      "cells": [
+                        "lastname",
+                        "{{ lastName }}"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "keyword": "Given ",
+              "line": 157,
+              "name": "I add the request body:",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [
+                {
+                  "content": "{\n\"firstname\": \"john\",\n\"lastname\": \"doe\"\n}",
+                  "line": 164
+                }
+              ],
+              "keyword": "Given ",
+              "line": 163,
+              "name": "the payload:",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [
+                {
+                  "content": "{\n\"firstname\": \"{{ firstName }}\"\n\"lastname\": \"{{ lastName }}\"\n}",
+                  "line": 174
+                }
+              ],
+              "keyword": "Given ",
+              "line": 173,
+              "name": "the payload:",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 183,
+              "name": "I add the form value \"firstname\" as \"john\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 184,
+              "name": "I add the form value \"lastname\" as \"doe\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 185,
+              "name": "I add the form value \"people.lastname\" as \"doe\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 189,
+              "name": "I add the form value \"limit\" as 10",
+              "result": {
+                "status": "ambiguous"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 190,
+              "name": "I add the form value \"offset\" as 30",
+              "result": {
+                "status": "ambiguous"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 191,
+              "name": "I add the form value \"page.offset\" as 30",
+              "result": {
+                "status": "ambiguous"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 195,
+              "name": "I add the form value \"size\" as 1.1",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 196,
+              "name": "I add the form value \"weight\" as 1.0",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 197,
+              "name": "I add the form value \"body.weight\" as 1.0",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 201,
+              "name": "I add the form value \"sort\" as {{ price }}",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 202,
+              "name": "I add the form value \"name\" as {{ name }}",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 203,
+              "name": "I add the form value \"list.name\" as {{ name }}",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 207,
+              "name": "I add the form value \"file\" as a file stored at \"avatar.png\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 211,
+              "name": "I add the form value \"file\" as a file stored at {{ filename }}",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [
+                {
+                  "rows": [
+                    {
+                      "cells": [
+                        "firstname",
+                        "john"
+                      ]
+                    },
+                    {
+                      "cells": [
+                        "lastname",
+                        "doe"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "keyword": "Given ",
+              "line": 215,
+              "name": "I add the form values:",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [
+                {
+                  "rows": [
+                    {
+                      "cells": [
+                        "firstname",
+                        "{{ firstName }}"
+                      ]
+                    },
+                    {
+                      "cells": [
+                        "lastname",
+                        "{{ lastName }}"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "keyword": "Given ",
+              "line": 221,
+              "name": "I add the form values:",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "When ",
+              "line": 227,
+              "name": "I run the API",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:11"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 231,
+              "name": "I should receive a response with the status 200",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 232,
+              "name": "I should receive a response with the status 404",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 236,
+              "name": "the response time is under 100 ms",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 240,
+              "name": "the header \"Content-Type\" should be \"application/json\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [
+                {
+                  "rows": [
+                    {
+                      "cells": [
+                        "Content-Type",
+                        "application/json"
+                      ]
+                    },
+                    {
+                      "cells": [
+                        "Content-Length",
+                        "1458"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "keyword": "Then ",
+              "line": 244,
+              "name": "the response headers should contains:",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [
+                {
+                  "rows": [
+                    {
+                      "cells": [
+                        "Content-Type",
+                        "{{ contentType}}"
+                      ]
+                    },
+                    {
+                      "cells": [
+                        "Content-Length",
+                        "1458"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "keyword": "Then ",
+              "line": 250,
+              "name": "the response headers should contains:",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 256,
+              "name": "\"Content-Length\" should be on the response header",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 257,
+              "name": "\"X-response-time\" should be on the response header",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 261,
+              "name": "\"X-response-time\" should not be on the response header",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 262,
+              "name": "\"poweered-by\" should not be on the response header",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 266,
+              "name": "the response should be empty array",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 270,
+              "name": "the response should not be empty array",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 274,
+              "name": "the response should be empty",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 278,
+              "name": "the response body at \"id\" should equal 10",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 279,
+              "name": "the response body at \"user.firstname\" should equal \"john\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 280,
+              "name": "the response body at \"user.lastname\" should equal {{ lastname }}",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 284,
+              "name": "the response body at \"$.id\" should equal 10",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 285,
+              "name": "the response body at \"$.user.firstname\" should equal \"john\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 286,
+              "name": "the response body at \"$.user.lastname\" should equal {{ lastname }}",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 290,
+              "name": "the response body at \"active\" should equal true",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 294,
+              "name": "the response body at \"$.active\" should equal true",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 298,
+              "name": "the response body at \"active\" should equal false",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 302,
+              "name": "the response body at \"$.active\" should equal false",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 306,
+              "name": "the response body at \"active\" should equal null",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 310,
+              "name": "the response body at \"$.active\" should equal null",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 314,
+              "name": "the response body at \"active\" should equal empty",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 318,
+              "name": "the response body at \"$.active\" should equal empty",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 322,
+              "name": "the response body at \"user.list\" should be an array",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 326,
+              "name": "the response body at \"$.user.list\" should be an array",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 330,
+              "name": "the response body at \"user.list\" should be an array of 10 items",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 334,
+              "name": "the response body at \"$.user.list\" should be an array of 10 items",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 338,
+              "name": "the response body at \"user.createdAt\" should equal close to now",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 342,
+              "name": "the response body at \"$.user.list\" should equal close to now",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 346,
+              "name": "the response body at \"user.children\" should not be null",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 350,
+              "name": "the response body at \"$.user.childern\" should not be null",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 354,
+              "name": "the response body at \"user.occupation\" should match \"/pilot/\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 358,
+              "name": "the response body at \"$.user.occupation\" should match \"/pilot/\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 362,
+              "name": "the response list should contain 12 items",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [
+                {
+                  "content": "{\n\"firstName\": \"John\"\n}",
+                  "line": 367
+                }
+              ],
+              "keyword": "Then ",
+              "line": 366,
+              "name": "the response body should be equal to:",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 375,
+              "name": "add the value \"Content-Type\" from the response header to the dataset as \"contentType\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 376,
+              "name": "I have the api gateway",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "And ",
+              "line": 377,
+              "name": "the header contains \"Content-Type\" as {{ contentTypw }}",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 381,
+              "name": "add the value \"user.id\" from the response body to the dataset as \"userId\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 382,
+              "name": "I have the api gateway",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "And ",
+              "line": 383,
+              "name": "I have the path \"/users/{userId}\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 387,
+              "name": "add the value \"$.user.id\" from the response body to the dataset as \"userId\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Given ",
+              "line": 388,
+              "name": "I have the api gateway",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "And ",
+              "line": 389,
+              "name": "I have the path \"/users/{{userId}}\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:6"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 393,
+              "name": "I add the cookie to the jar",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 397,
+              "name": "I print the request",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 401,
+              "name": "I print the response",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "arguments": [],
+              "keyword": "Then ",
+              "line": 405,
+              "name": "I print the value \"{{ userId }}\"",
+              "match": {
+                "location": "../restqapi/src/restqapi/steps/index.js:16"
+              },
+              "result": {
+                "status": "skipped"
+              }
+            },
+            {
+              "keyword": "After",
+              "hidden": true,
+              "match": {
+                "location": "../restqapi/src/restqapi/hooks.js:35"
+              },
+              "result": {
+                "status": "passed",
+                "duration": 1000000
+              },
+              "embeddings": [
+                {
+                  "data": "{\"apis\":[{\"request\":{\"hostname\":\"api.restqa.io\",\"port\":\"\",\"protocol\":\"https:\",\"pathname\":\"/\",\"hooks\":{\"afterResponse\":[null]},\"headers\":{\"cookie\":\"undefined\",\"x-correlation-id\":\"test-e2e--601-1614328544778\",\"user-agent\":\"restqa (https://github.com/restqa/restqa)\"},\"responseType\":\"json\"},\"response\":null},{\"request\":{\"hostname\":\"api.example.com\",\"port\":\"\",\"protocol\":\"https:\",\"pathname\":\"/users/1/users/1/addresses/users/undefined/addresses/customers/customers/customers/1234/customers/1234\",\"hooks\":{\"afterResponse\":[null]},\"headers\":{\"cookie\":\"undefined\",\"Content-Type\":\"undefined\",\"Accept-language\":\"undefined\",\"user-agent\":\"restqa (https://github.com/restqa/restqa)\",\"Accept-Language\":\"undefined\",\"authorization\":\"Basic Zm9vOmJhcg==\",\"x-correlation-id\":\"test-e2e-delete-552-1614328544778\"},\"rejectUnauthorized\":false,\"method\":\"delete\",\"searchParams\":{\"sort\":\"undefined\",\"name\":\"undefined\",\"limit\":10,\"offset\":30},\"json\":{\"firstname\":\"john\",\"lastname\":\"doe\",\"people\":{\"lastname\":\"doe\"}},\"responseType\":\"json\"},\"response\":null}]}",
+                  "mime_type": "application/json"
+                }
+              ]
+            }
+          ],
+          "step_passed": 39,
+          "step_failed": 0,
+          "step_skipped": 84,
+          "step_undefined": 0,
+          "result": false,
+          "status": "skipped",
+          "duration": 0.012,
+          "timestamp": "2021-02-26T08:35:44+00:00",
+          "metadata": {
+            "id": "e0ea8b62-7185-4318-9763-a5e738945e50",
+            "startTime": "2021-02-26T08:35:44+00:00",
+            "name": "app",
+            "key": "APP",
+            "env": "local",
+            "duration": 0.012,
+            "success": false,
+            "durationFormat": "00:00"
+          }
+        }
+      ],
+      "total": 1,
+      "passed": 0,
+      "failed": 0,
+      "skipped": 1,
+      "undefined": 0,
+      "result": false,
+      "duration": 0.012,
+      "timestamp": "2021-02-26T08:35:44+00:00",
+      "type": "feature",
+      "feature_name": "Validator",
+      "metadata": {
+        "id": "e0ea8b62-7185-4318-9763-a5e738945e50",
+        "startTime": "2021-02-26T08:35:44+00:00",
+        "name": "app",
+        "key": "APP",
+        "env": "local",
+        "duration": 0.012,
+        "success": false,
+        "durationFormat": "00:00"
+      }
+    }
+  ]
+}

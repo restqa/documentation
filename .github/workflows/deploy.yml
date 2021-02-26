@@ -23,6 +23,9 @@ jobs:
       - name: Import
         run: |
           yarn doc:import
+      - name: Test Steps
+        run: |
+          yarn test:steps
       - name: Build
         env:
           NODE_ENV: 'production'
