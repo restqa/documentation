@@ -98,7 +98,7 @@ Then I should receive a response with the status 200
     },
     "linkedin": {
       "action": "Follow us",
-      "href": "https://www.linkedin.com/company/restqa"
+      "href": "https://linkedin.com/company/restqa"
     },
     "medium": {
       "action": "Follow us",
