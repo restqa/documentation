@@ -1,9 +1,11 @@
 const Plugins = require('./plugins')
 
-const pluginList = Plugins.reduce((result, plugin) => {
-  result[plugin.name] = plugin.docs.map( doc => doc.output.replace('.md', ''))
-  return result
-}, {})
+const pluginList = Plugins
+  .filter(docs => docs.enabled)
+  .reduce((result, plugin) => {
+    result[plugin.name] = plugin.docs.map( doc => doc.output.replace('.md', ''))
+    return result
+  }, {})
 
 module.exports = {
   someSidebar: {
@@ -31,6 +33,8 @@ module.exports = {
     '📦  CI/CD integration': [
       'ci-cd/github-action',
       'ci-cd/gitlab-ci',
+      'ci-cd/circle-ci',
+      'ci-cd/travis-ci',
       'ci-cd/bitbucket-pipeline',
       'ci-cd/docker'
     ],
