@@ -27,5 +27,5 @@ You can find the documentation for the following concept:
 * Data integration
 * CI/CD Integration
 * Alerting
-* Moniitoring
+* Monitoring
 * API Reference
