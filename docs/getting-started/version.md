@@ -3,7 +3,8 @@ id: version
 title: Versions
 ---
 
-RestQA is on constant improvment, this can be difficult to keep up on the speed and using the latest version.
+RestQA is on constant improvment, we are happy to share more and more feature.
+However from a consumer perspective, this can be difficult to keep track on the latest version.
 
 In order to stay up to date, run the command: 
 
