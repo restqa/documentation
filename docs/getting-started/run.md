@@ -42,3 +42,41 @@ Or through the environment variable `RESTQA_ENV`
 RESTQA_ENV=uat restqa run
 ```
 
+
+### Specify the feature file
+
+#### Glob patterm
+
+```
+restqa run tests/integration/**/*.feature
+```
+
+#### Feature directory
+
+```
+restqa run tests/integration/
+```
+
+#### Specify a feature file
+
+```
+restqa run tests/integration/welcome.feature
+```
+
+### Specify the Gherkin Tag
+
+If your feature or your scenario has a tag:
+
+``` {1,2}
+@success
+Feature: Customer detail feature
+
+Scenario: Retrieve all the customer information
+...
+```
+
+You can run the following command
+```
+restqa run -t @success
+```
+
