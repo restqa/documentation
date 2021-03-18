@@ -3,11 +3,11 @@ id: circle-ci
 title: Circle CI
 ---
 
-If you are hosting your tests scenario into Circle CI, You can easily run your test automation from your own git repository.
+If you are hosting your test scenarios in Circle CI, you can easily run your test automation from your own GIT repository.
 
 ### Circle CI
 
-If you are new to Circle CI we are inviting you to watch this [video](https://www.youtube.com/watch?v=J1l-icYGyd0)
+If you are new to Circle CI, we suggest for you to watch this [video](https://www.youtube.com/watch?v=J1l-icYGyd0)
 
 The installation is very simple :
 
@@ -38,4 +38,4 @@ workflows:
 
 And Voila!
 
-In order to know more about the different option from the `restqa` command line,  take a look at the [RestQA CLI](/api/cli) documentation
+In order to know more about the different option from the `restqa` command line,  you may check [RestQA CLI](/api/cli) for documentation.
