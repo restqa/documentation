@@ -33,7 +33,7 @@
     ]
   },
   "devDependencies": {
-    "@restqa/restqa": "^0.0.19",
+    "@restqa/restqa": "0.0.21",
     "comment-parser": "^0.7.6"
   }
 }
