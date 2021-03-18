@@ -6,7 +6,7 @@ title: 'Enable RestQapi'
 
 ## Description
 
-By using the RestQapi plugin you will be able to access to a plenty of step definition suppporting you on create test scenario for your __Rest API__.
+By using the RestQapi plugin you'll get access to many step definition suppporting you on create test scenario for your __Rest API__.
 
 ## Example
 
@@ -47,5 +47,5 @@ Define plugin name
 * **Type:** `string`
 * **Required:** `yes`
 
-Define the Url host of your api gateway for the selected environment
+Define the Url host of your API gateway for the selected environment.
 
