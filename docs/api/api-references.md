@@ -62,11 +62,11 @@ environments:
           onlyFailed: false
 ```
 
-> This method is just printing the output. It will not override your current configuration file.
+> This method is printing the output. It will not override your current configuration file.
 
 ### `Generate(cmd)`
 
-Generate a scenario from a curl command, the process will use the parameter from the curl command to call your server then catch the response and generate a valid RestQA Test Scenario (Gherkin format)
+To generate a scenario from a curl command, the process will use the parameter from the curl command to call your server then catch the response and generate a valid RestQA Test Scenario (Gherkin format)
 
 * `cmd` (string) : The curl command of your request (example: curl https://jsonplaceholder.typicode.com/todos/1)
 
@@ -110,7 +110,7 @@ Then I should receive a response with the status 200
 
 ### `Steps(options)`
 
-Retrieve the list of step definition availabe for a specific file
+Retrieve the list of step definition availabe for a specific file.
 
 * `keyword` (string) : Step definition keyword (ex: 'given')
 * `configFile` (string) : Specify the configuration file to use (ex: './restqa.yml')
