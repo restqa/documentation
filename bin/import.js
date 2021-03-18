@@ -1,8 +1,6 @@
 /*
  * Script importing Documentation from other repository
  *
- *
- * 
  * */ 
 const Got = require('../node_modules/got')
 const CommentParser = require('comment-parser')
@@ -11,7 +9,7 @@ const fs = require('fs')
 const path = require('path')
 
 async function main() {
-  const all = config.map(generate)
+  const all = config.filter(plugin => plugin.enabled).map(generate)
   let result = await Promise.all(all)
   result.forEach(docs => {
     docs.forEach(doc => {
@@ -22,36 +20,38 @@ async function main() {
 
 async function generate(plugin) {
 
-  const list = plugin.docs.map(async doc => {
-    let { body } = await Got(doc.input)
-    doc.content = body
-    if (true === doc.jsdoc) {
-       const categories = CommentParser(body)
-        .filter( step => {
-          return step.tags.filter(tag => tag.tag === 'example').length
-        })
-        .reduce((result, step) => {
-          let category = ((step.tags.find(tag => tag.tag === 'category') || {}).source )|| 'Undefined'
-          category = category.replace('@category', '')
-          result[category] = result[category] || []
-          result[category].push(step)
-          return result
-        }, {})
-
-        doc.content = Object.keys(categories)
-          .map(category => {
-            let head = `## ${category}`
-            let body = categories[category]
-              .map(formatStepDefintion)
-              .join('\n\n---\n\n')
-            return head + '\n\n\n' + body
+  const list = plugin.docs
+    .filter(doc => doc.input)
+    .map(async doc => {
+      let { body } = await Got(doc.input)
+      doc.content = body
+      if (true === doc.jsdoc) {
+         const categories = CommentParser(body)
+          .filter( step => {
+            return step.tags.filter(tag => tag.tag === 'example').length
           })
-          .join('\n')
-    }
-    createFile(doc)
+          .reduce((result, step) => {
+            let category = ((step.tags.find(tag => tag.tag === 'category') || {}).source )|| 'Undefined'
+            category = category.replace('@category', '')
+            result[category] = result[category] || []
+            result[category].push(step)
+            return result
+          }, {})
 
-    return doc
-  })
+          doc.content = Object.keys(categories)
+            .map(category => {
+              let head = `## ${category}`
+              let body = categories[category]
+                .map(formatStepDefintion)
+                .join('\n\n---\n\n')
+              return head + '\n\n\n' + body
+            })
+            .join('\n')
+      }
+      createFile(doc)
+
+      return doc
+    })
 
   return Promise.all(list)
 }

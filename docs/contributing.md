@@ -10,7 +10,7 @@ There are a couple of ways in which you can contribute to RestQA, each of them v
 ## Share some love 💙
 
 - Give RestQA a star on [GitHub](https://github.com/restqa/restqa).
-- Follow us on [Twitter](https://twitter.com/restqa) and [LinkedIn](https://www.linkedin.com/company/restqa).
+- Follow us on [Twitter](https://twitter.com/restqa) and [LinkedIn](https://linkedin.com/company/restqa).
 
 
 ## Share your story 💌

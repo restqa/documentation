@@ -10,4 +10,4 @@ jobs:
     - name: 'restqa-404-links'
       uses: restqa/404-links@v1.0.1
       with:
-        ignore: 'https://www.linkedin.com/company/restqa,https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks,https://twitter.com/restqa,https://cucumber.io/docs/gherkin/reference/,https://cucumber.io/'
+        ignore: 'https://linkedin.com/company/restqa,https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks,https://twitter.com/restqa,https://cucumber.io/docs/gherkin/reference/,https://cucumber.io/'

@@ -62,11 +62,11 @@ environments:
           onlyFailed: false
 ```
 
-> This method is just printing the output. It will not override your current configuration file.
+> This method is printing the output. It will not override your current configuration file.
 
 ### `Generate(cmd)`
 
-Generate a scenario from a curl command, the process will use the parameter from the curl command to call your server then catch the response and generate a valid RestQA Test Scenario (Gherkin format)
+To generate a scenario from a curl command, the process will use the parameter from the curl command to call your server then catch the response and generate a valid RestQA Test Scenario (Gherkin format)
 
 * `cmd` (string) : The curl command of your request (example: curl https://jsonplaceholder.typicode.com/todos/1)
 
@@ -106,3 +106,95 @@ Then I should receive a response with the status 200
 
 
 > You can also get the benefit of this feature from our Website : [https://api2scenario.restqa.io](https://api2scenario.restqa.io/) 😁
+
+
+### `Steps(options)`
+
+Retrieve the list of step definition availabe for a specific file.
+
+* `keyword` (string) : Step definition keyword (ex: 'given')
+* `configFile` (string) : Specify the configuration file to use (ex: './restqa.yml')
+* `tag` (string) : Filter the step to a specific keyword (ex: 'cookie')
+
+Example:
+
+```js
+const { Steps } = require('@restqa/restqa')
+const opt = {
+  keyword: 'then',
+  configFile: './.restqa.yml',
+  tag: 'header',
+}
+const result = Steps(opt)
+console.log(result)
+```
+
+Output:
+
+```yaml
+[
+  {
+    Plugin: '@restqa/restqapi',
+    Keyword: 'then',
+    Step: 'I should receive a response with the status {int}',
+    Comment: 'Check the response http code'
+  },
+  {
+    Plugin: '@restqa/restqapi',
+    Keyword: 'then',
+    Step: 'the response time is under {int} ms',
+    Comment: 'Check the response latency'
+  },
+  {
+    Plugin: '@restqa/restqapi',
+    Keyword: 'then',
+    Step: 'the header {string} should be {string}',
+    Comment: 'Check if a property in the response header has the exact string value'
+  },
+...
+```
+
+### `Run(options)`
+
+Run the test suite
+
+* `configFile` (string): Specify the configuration file to use (ex: './restqa.yml')
+* `env` (string): Define the target environemnt
+* `stream` ([Stream](https://nodejs.org/api/stream.html#stream_class_stream_writable)): Write stream (default: stdOut)
+* `path` (string): Path folder of the test scenario
+
+Example:
+
+```js
+const { Run } = require('@restqa/restqa')
+const Stream = require('stream')
+
+const opt = {
+  configFile: '.restqa.yml',
+  env: 'local',
+  stream: new Stream.Writable()
+}
+  
+Run(opt)
+  .then(result => {
+    console.log(result)
+  })
+  .catch(err => {
+    console.log(err)
+  })
+```
+
+Output:
+
+```yaml
+{
+  id: 'c28812ec-64ed-4f8d-9538-f5d4f6be9454',
+  startTime: '2021-03-12T09:39:12+00:00',
+  name: 'app',
+  key: 'APP',
+  env: 'local',
+  duration: 0.858,
+  success: false,
+  durationFormat: '00:00',
+...
+```
