@@ -47,6 +47,11 @@ module.exports = {
       'alerting/line',
       'alerting/webhook'
     ],
+    '📊  Reporting': [
+      'reporting/html',
+      //'reporting/html-remote',
+      'reporting/json',
+    ],
     '📈  Monitoring': [
       'monitoring/kibana',
       'monitoring/grafana',
