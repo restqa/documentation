@@ -25,6 +25,9 @@ jobs:
           yarn doc:import
       - name: Test Steps
         run: |
+          yarn install @restqa/restqa
+      - name: Test Steps
+        run: |
           yarn test:steps
       - name: Build
         env:
