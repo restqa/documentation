@@ -14,7 +14,7 @@ Setting the **FILE** test report is very simple, this report will allow you to c
   "startTime": "2021-02-28T10:52:46+00:00",
   "name": "app",
   "key": "APP",
-  "env": "local", '
+  "env": "local",
   "duration": 0.766,
   "success": true,
   "durationFormat": "00:00",
