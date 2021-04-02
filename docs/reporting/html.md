@@ -3,16 +3,16 @@ id: html
 title: Html (default)
 ---
 
-Setting the **HTML** test report is very simple, this report will allow you to visualize your test result locally.
+Setting the **HTML** test report is very simple and this report allows you to visualize your test result locally.
 
 ## Example
 
 ![HTML example](../assets/cucumber-export-html.png)
 
 :::note
- ⚡️This report is enabled by default when you are using the command `restqa init` to setup your project
+ ⚡️This report is enabled by default when you are using the command `restqa init` to setup your project.
 :::
-
+/
 ## Pre-requisite
 
  * 1 minute  🚀
@@ -32,7 +32,7 @@ environments:
 
 ## Command 
 
-If you don't want configure this part manually you can also use the command line :
+If you don't want configure this part manually you can also use the command line:
 
 ```
 restqa install html
