@@ -23,9 +23,9 @@ jobs:
       - name: Import
         run: |
           yarn doc:import
-      - name: Test Steps
+      - name: Install RestQA
         run: |
-          yarn install @restqa/restqa
+          yarn add @restqa/restqa
       - name: Test Steps
         run: |
           yarn test:steps
