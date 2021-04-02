@@ -14,4 +14,4 @@ npm i -g @restqa/restqa@latest
 
 This command will install the latest version of RestQA on computer
 
-Take a look at the [CHANGELOG](https://gi thub.com/restqa/restqa/blob/master/CHANGELOG.md) to track the changes.
+Take a look at the [CHANGELOG](https://github.com/restqa/restqa/blob/master/CHANGELOG.md) to track the changes.
