@@ -83,12 +83,19 @@ You can run the test by using the command
 restqa run
 ```
 
+or  
+
+```bash
+restqa r
+```
+
 A few options are available:
 
 | Parameter  | Alias | Description                                                  | Default                           | 
 | ---------- | ----- | ------------------------------------------------------------ | --------------------------------- |
-| `--config` | `-c` | Specify the configuration file to use                        | `.restqa.yml`                     |
-| ` --env`   | `-e` | Specify the environement to pick from the configuration file | Default environment in the config |
+| `--config` | `-c` | Specify the configuration file to use                         | `.restqa.yml`                     |
+| ` --env`   | `-e` | Specify the environement to pick from the configuration file  | Default environment in the config |
+| ` --tag`   | `-t` | Specify the tag to pre-select features or scenarios           |                              |
 
 ## Generate Scenario (curl)
 

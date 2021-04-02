@@ -11,7 +11,7 @@ module.exports = {
   someSidebar: {
     '🚦  RestQA': [
       'introduction',
-//      'concept',
+      //'concept',
       'contributing'
     ],
     '🚀  Getting Started': [
@@ -20,6 +20,7 @@ module.exports = {
       'getting-started/configuration',
       'getting-started/environment-variable',
       'getting-started/run',
+      'getting-started/version',
     ],
     '🎯  Test Suites': [
       'tests/introduction',
@@ -45,6 +46,11 @@ module.exports = {
       'alerting/microsoft-teams',
       'alerting/line',
       'alerting/webhook'
+    ],
+    '📊  Reporting': [
+      'reporting/html',
+      //'reporting/html-remote',
+      'reporting/json',
     ],
     '📈  Monitoring': [
       'monitoring/kibana',
