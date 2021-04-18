@@ -134,5 +134,3 @@ To export the generated scenario into the file Generated Scenario into the `gene
 restqa generate  curl https://jsonplaceholder.typicode.com/todos/1 -o generated.feature
 ```
 
-> You can also get the benefit of this feature from our Website : [https://api2scenario.restqa.io](https://api2scenario.restqa.io/) 😁
-

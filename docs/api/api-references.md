@@ -105,9 +105,6 @@ Then I should receive a response with the status 200
 ```
 
 
-> You can also get the benefit of this feature from our Website : [https://api2scenario.restqa.io](https://api2scenario.restqa.io/) 😁
-
-
 ### `Steps(options)`
 
 Retrieve the list of step definition availabe for a specific file.
