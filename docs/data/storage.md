@@ -6,13 +6,13 @@ title: File system
 
 While writting your test scenario you might need to interact with the file system.
 
-In order to control the access to your file system, RestQA will only access to the folder that you specify in the configuration file.
-The path to the folder needs to be a relative path from your `.restqa.yml` file location
+In order to control the access to your file system, RestQA only access the folder that you specify in the configuration file.
+The path to the folder needs to be relative path from your `.restqa.yml` file location.
 
 ## Usage
 
-In the example below we are defining our **storage folder** as `tests/integration/data`.
-This is the folder where we will decide to store all the file that we will need to use during the test scenario execution.
+The example below we are defining our **storage folder** as `tests/integration/data`.
+This is the folder where we decided to store all the file that we need to use during the test scenario execution.
 
 ```yaml {11-12} title=".restqa.yml" 
 ---
@@ -43,7 +43,7 @@ Then we can imagine that we create the file:
 }
 ```
 
-Finally we can reuse our from some step definition that required access to the file system such as :
+Finally we are able to reuse from some step definition that requires access to the file system such as:
 
 ```gherkin {2-2}
 Given I have the api gateway
