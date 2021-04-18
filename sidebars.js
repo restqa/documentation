@@ -20,7 +20,7 @@ module.exports = {
       'getting-started/configuration',
       'getting-started/environment-variable',
       'getting-started/run',
-      'getting-started/version',
+      'getting-started/version'
     ],
     '🎯  Test Suites': [
       'tests/introduction',
@@ -29,7 +29,8 @@ module.exports = {
     '📚  Data integration': [
       'data/google-spreadsheet',
       //'data/confluence',
-      'data/excel'
+      'data/excel',
+      'data/storage'
     ],
     '📦  CI/CD integration': [
       'ci-cd/github-action',
