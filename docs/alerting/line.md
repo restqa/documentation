@@ -25,6 +25,14 @@ environments:
           reportUrl: 'http://example.com/test-report/{uuid}'
 ```
 
+## Command 
+
+If you don't want configure this part manually you can also use the command line :
+
+```
+restqa install line
+```
+
 ### Options
 
 | *Property*   | *Description*                                                                                | *Default*          |
