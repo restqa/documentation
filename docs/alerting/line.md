@@ -27,7 +27,7 @@ environments:
 
 ## Command 
 
-If you don't want configure this part manually you can also use the command line :
+If you don't want to configure this part manually you can also use the command line:
 
 ```
 restqa install line
