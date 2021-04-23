@@ -22,7 +22,7 @@ module.exports = {
       'getting-started/run',
       'getting-started/version'
     ],
-    '🎯  Test Suites': [
+    '🎯  Step definition': [
       'tests/introduction',
       pluginList
     ],

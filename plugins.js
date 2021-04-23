@@ -1,5 +1,5 @@
 module.exports = [{
-  name: "RestQapi Plugin",
+  name: "REST API Plugin (default)",
   enabled: true,
   repository: "",
   docs: [{
@@ -38,6 +38,31 @@ module.exports = [{
       id: 'then',
       sidebar_label: 'Then',
       title: 'Then: Describe an expected outcome'
+    },
+    jsdoc: true
+  }]
+},{
+  name: "Fake data Plugin",
+  enabled: true,
+  repository: "",
+  docs: [{
+    output: "tests/plugins/config-faker-plugin.md"
+  },{
+    input: "https://raw.githubusercontent.com/restqa/faker-plugin/master/docs/features.md",
+    output: "tests/faker-plugin/features.md",
+    metadata: {
+      id: 'features',
+      sidebar_label: 'Gherkin References',
+      title: 'Gherkin References'
+    },
+    jsdoc: false
+  }, {
+    input: "https://raw.githubusercontent.com/restqa/faker-plugin/master/src/faker-plugin/steps/1-given/index.js",
+    output: "tests/faker-plugin/given.md",
+    metadata: {
+      id: 'given',
+      sidebar_label: 'Given',
+      title: 'Given: Describe your context'
     },
     jsdoc: true
   }]
