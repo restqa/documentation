@@ -8,14 +8,18 @@ title: 'Enable the Faker Plugin'
 
 ## Introduction
 
-Are you not fed up John Doe ? or reusing every time the same information for your test data ? How your product will react on the production with a different real data?
+Are you not fed up of using John Doe in your test automation? 😆 
 
-The best way to answer to the question is to have test scenario that are testing your product with different data each time.
+Or What will be the behavior of your product  on the production while using real data?
 
-This is close to exploration testing... this exactly how this plugin want to help you.
-It will extend the RestQA capability in order to generate fake data on your scenario.
+Thjs a good question right? And The best way to answer to it is to start thinking of having test scenario that are using different data each time.
+
+This should help you on doint more exploration testing... And this exactly how this plugin want to help you.
+
+Once installed this plugin will extend the RestQA capability in order to generate fake data on your scenario.
 
 This plugins is based on the [faker.js](https://github.com/Marak/faker.js) library
+
 
 ## Installation
 
