@@ -31,12 +31,11 @@ npm install @restqa/faker-plugin
 
 Then in your `.restqa.yml` configuration file you will have to add the follow snippet under the `environments.*.plugins` section:
 
-```
+```yaml
 - name: @restqa/faker-plugin
   config:
     locale: 'en' 
     prefix: 'faker'
-  
 ```
 
 

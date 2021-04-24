@@ -20,6 +20,7 @@ module.exports = {
       'getting-started/configuration',
       'getting-started/environment-variable',
       'getting-started/run',
+      'getting-started/plugins',
       'getting-started/version'
     ],
     '🎯  Step definition': [
