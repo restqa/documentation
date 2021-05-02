@@ -114,7 +114,7 @@ Define the data strategy during the test execution.
 * **Type:** `string`
 * **Required:** `yes`
 
-Define the external data source to use as a test dataset.
+Define the external data source to use as test dataset.
 
 ### environments[].data.config
 
@@ -157,4 +157,4 @@ Specific configuration to pass to the RestQA processor
 * **Required:** `no`
 * **Default:** `5000`
 
-Define the timeout for steps. Defaults to 5000 milliseconds.
+Define the timeout for steps. Default is 5000 milliseconds.
