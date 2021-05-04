@@ -12,7 +12,7 @@ Setting the **HTML** test report is very simple and this report allows you to vi
 :::note
  ⚡️This report is enabled by default when you are using the command `restqa init` to setup your project.
 :::
-/
+
 ## Pre-requisite
 
  * 1 minute  🚀

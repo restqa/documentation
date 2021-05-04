@@ -114,7 +114,7 @@ Define the data strategy during the test execution.
 * **Type:** `string`
 * **Required:** `yes`
 
-Define the external data source to use as a test dataset.
+Define the external data source to use as test dataset.
 
 ### environments[].data.config
 
@@ -143,3 +143,18 @@ Array of plugins to use. See [Plugin API](../api/plugin-api.md) for more details
 * **Required:** `yes`
 
 Array of outputs to use. Check [Ouputs API](../api/output-api.md) for more details on RestQA outputs.
+
+### restqa
+
+* **Type:** `object`
+* **Required:** `no`
+
+Specific configuration to pass to the RestQA processor
+
+### restqa.timeout
+
+* **Type:** `number`
+* **Required:** `no`
+* **Default:** `5000`
+
+Define the timeout for steps. Default is 5000 milliseconds.

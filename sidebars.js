@@ -20,9 +20,10 @@ module.exports = {
       'getting-started/configuration',
       'getting-started/environment-variable',
       'getting-started/run',
+      'getting-started/plugins',
       'getting-started/version'
     ],
-    '🎯  Test Suites': [
+    '🎯  Step definition': [
       'tests/introduction',
       pluginList
     ],

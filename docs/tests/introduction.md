@@ -1,7 +1,7 @@
 ---
 id: introduction
 sidebar_label: Introduction
-title: Understand the test suites
+title: Understand the step definition
 ---
 
 RestQa is based on [Cucumber](https://cucumber.io/), the test suite are using the **Gherkin** language.
@@ -28,7 +28,7 @@ Dependending on the plugin enabled into your project you will have a set of pre-
 In order get the lists of the steps available on your project use the command:
 
 ```
-restqa steps
+restqa steps [keyword]
 ```
 
 More detail about this command [here](../api/cli)
