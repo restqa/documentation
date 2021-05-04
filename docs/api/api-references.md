@@ -110,7 +110,7 @@ Then I should receive a response with the status 200
 Retrieve the list of step definition availabe for a specific file.
 
 * `keyword` (string) : Step definition keyword (ex: 'given')
-* `configFile` (string) : Specify the configuration file to use (ex: './restqa.yml')
+* `config` (string) : Specify the configuration file to use (ex: './restqa.yml')
 * `tag` (string) : Filter the step to a specific keyword (ex: 'cookie')
 
 Example:

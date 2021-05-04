@@ -21,15 +21,15 @@ You can also initialized your project without answering the question by using th
 restqa init -y
 ```
 
-## Install a new plugin
+## Install a new integration
 
-Retrieve the list of available plugin:
+Retrieve the list of available integration:
 
 ```bash
 restqa install 
 ```
 
-If you want to install the Slack plugin:
+If you want to install the Slack integration:
 
 
 ```bash
@@ -39,7 +39,7 @@ restqa install slack
 example:
 
 ```bash
-restqa install <PLUGIN>
+restqa install <INTEGRATION>
 ```
 
 ## Step definition
@@ -97,6 +97,20 @@ A few options are available:
 | ` --env`   | `-e` | Specify the environement to pick from the configuration file  | Default environment in the config |
 | ` --tag`   | `-t` | Specify the tag to pre-select features or scenarios           |                              |
 
+## Example project
+
+RestQA provides a simple example that you can run using the command:
+
+```bash
+restqa example
+```
+
+or  
+
+```bash
+restqa ex
+```
+
 ## Generate Scenario (curl)
 
 If your API is already developed and you want a test scenario to check the non-regression, the best is just to generate a scenario from your curl command.
@@ -133,4 +147,3 @@ To export the generated scenario into the file Generated Scenario into the `gene
 ```bash
 restqa generate  curl https://jsonplaceholder.typicode.com/todos/1 -o generated.feature
 ```
-
