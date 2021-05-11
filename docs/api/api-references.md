@@ -4,7 +4,7 @@ title: API Reference
 
 ---
 
-Each method can be destructed from the object returned by `require('@restqa/restqa')`. 
+Each method can be deconstructed from the object returned by `require('@restqa/restqa')`. 
 
 ---
 
