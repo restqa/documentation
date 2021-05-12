@@ -23,6 +23,8 @@ pipelines:
       script:
         - restqa run .
     #   - 'restqa run -c .restqa.yml .' # if you want to add arguments
+      artifacts:
+        - report/**
 ```
 
 And Voila!
