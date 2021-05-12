@@ -25,6 +25,9 @@ RestQa:
   script:
     - 'restqa run .'
 #   - 'restqa run -c .restqa.yml .' # if you want to add arguments
+  artifacts:
+    paths:
+    - report
 ```
 
 And Voila!

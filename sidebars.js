@@ -58,6 +58,10 @@ module.exports = {
       'monitoring/kibana',
       'monitoring/grafana',
     ],
+    '🏋️ Performance': [
+      'performance/introduction',
+      'performance/artillery'
+    ],
     'Premium Contribution': [
 
     ],

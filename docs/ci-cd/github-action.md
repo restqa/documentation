@@ -30,6 +30,11 @@ jobs:
         SLACK_WEBHOOK_URL: ${{secrets.SLACK_WEBHOOK_URL}}
       with:
         path: 'test/' # If your tests are located into the `test` folder
+    - name: RestQA Report
+      uses: actions/upload-artifact@v2
+      with:
+        name: restqa-report
+        path: report
 
 ```
 

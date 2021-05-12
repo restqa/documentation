@@ -4,17 +4,17 @@ title: API Reference
 
 ---
 
-Each method can be destructed from the object returned by `require('@restqa/restqa')`. 
+Each method can be deconstructed from the object returned by `require('@restqa/restqa')`. 
 
 ---
 
 ### `Install(options)`
 
-Generate a configuration file output from an addon install.
+Generate a configuration file output from an add on install.
 
 * `name` (string) : The name of the addon you want to install (ex: 'slack')
 * `configFile` (string) : Location of the RestQA Configuration File (ex: './restqa.yml')
-* `env` (string) : The target enviironment (from your RestQA config file) (ex: 'local')
+* `env` (string) : The target environment (from your RestQA config file) (ex: 'local')
 * `config` (object) : Represent the configuration required to setup the addon 
 
 Example:
@@ -107,10 +107,10 @@ Then I should receive a response with the status 200
 
 ### `Steps(options)`
 
-Retrieve the list of step definition availabe for a specific file.
+Retrieve the list of step definition available for a specific file.
 
 * `keyword` (string) : Step definition keyword (ex: 'given')
-* `configFile` (string) : Specify the configuration file to use (ex: './restqa.yml')
+* `config` (string) : Specify the configuration file to use (ex: './restqa.yml')
 * `tag` (string) : Filter the step to a specific keyword (ex: 'cookie')
 
 Example:
