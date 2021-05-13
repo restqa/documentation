@@ -158,3 +158,25 @@ Specific configuration to pass to the RestQA processor
 * **Default:** `5000`
 
 Define the timeout for steps. Default is 5000 milliseconds.
+
+### restqa.tips
+
+* **Type:** `object`
+* **Required:** `no`
+
+Settings for the small tips that are shared on the output console
+
+### restqa.tips.enabled
+
+* **Type:** `boolean`
+* **Required:** `no`
+* **Default:** `true`
+
+Enabled or disabled the tips
+
+### restqa.tips.messages
+
+* **Type:** `array<string>`
+* **Required:** `no`
+
+Help you to define custom tips.
