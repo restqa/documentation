@@ -195,3 +195,24 @@ Output:
   durationFormat: '00:00',
 ...
 ```
+
+### `Dashboard(options)`
+
+Expose the RestQA Dashboard using a specific configuration
+
+* `configFile` (string): Specify the configuration file to use (ex: './restqa.yml')
+
+Example:
+
+```js
+const { Dashboard } = require('@restqa/restqa')
+
+const opt = {
+  configFile: '.restqa.yml',
+}
+  
+const server = Dashboard(options)
+server.listen(8000, () => {
+  console.log('The dashboard is running on the port 8000')
+})
+```

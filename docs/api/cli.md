@@ -147,3 +147,21 @@ To export the generated scenario into the file Generated Scenario into the `gene
 ```bash
 restqa generate  curl https://jsonplaceholder.typicode.com/todos/1 -o generated.feature
 ```
+
+## Dashboard
+
+Some of you might be interested by a user interface to integrate your tests.
+You wish has been granted!
+
+Usage : 
+
+```bash
+restqa dashboard
+```
+
+A few options are available:
+
+| Parameter  | Alias | Description                                                  | Default       | 
+| ---------- | ----- | ------------------------------------------------------------ | --------------|
+| `--config` | `-c` | Specify the configuration file to use                         | `.restqa.yml` |
+| ` --port`  | `-p` | Specify the running http port                                 | 8081          |
