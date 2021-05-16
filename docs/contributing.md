@@ -13,6 +13,10 @@ There are a couple of ways in which you can contribute to RestQA, each of them v
 - Follow us on [Twitter](https://twitter.com/restqa) and [LinkedIn](https://linkedin.com/company/restqa).
 
 
+## Share your feedback 👍
+
+We want to provide the best experience to our users, your feedback are important to us: https://restqa.io/feedback
+
 ## Share your story 💌
 
 RestQa users come from a wide range of backgrounds, experience levels, and interest. We would love to here about your feedbacks : hello@restqa.io
