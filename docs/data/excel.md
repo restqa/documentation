@@ -93,5 +93,5 @@ restqa install excel
 | `config.folder`    | The folder where the csv files are located                     |                    |
 | `config.delimiter` | The csv column delimiter character                             | `,`                |
 | `startSymbol`      | Used for configuring the interpolation markup                  | `{{`               |
-| `endSymbol`        | how the error message within slack                             | `}}`               |
+| `endSymbol`        |  Used for configuring the interpolation markup                 | `}}`               |
 
