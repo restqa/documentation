@@ -12,7 +12,12 @@ module.exports = {
     googleAnalytics: {
        trackingID: 'UA-118770210-1'
     },
-     announcementBar: {
+    algolia: {
+      apiKey: '9d632c07174c5d214076c3d956358166',
+      indexName: 'restqa',
+      appId: '8XDCCY4LAB'
+    },
+    announcementBar: {
       id: 'support_us', // Any value that will identify this message.
       content:
         'Want to support <strong>RestQA</strong>, give a star on <strong><a target="_blank" rel="noopener noreferrer" href="https://github.com/restqa/restqa">Github</a></strong>  ⭐️   ',
