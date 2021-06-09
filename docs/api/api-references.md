@@ -211,7 +211,7 @@ const opt = {
   configFile: '.restqa.yml',
 }
   
-const server = Dashboard(options)
+const server = Dashboard(opt)
 server.listen(8000, () => {
   console.log('The dashboard is running on the port 8000')
 })
