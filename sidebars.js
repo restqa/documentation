@@ -39,6 +39,7 @@ module.exports = {
       'ci-cd/circle-ci',
       'ci-cd/travis-ci',
       'ci-cd/bitbucket-pipeline',
+      'ci-cd/jenkins',
       'ci-cd/docker'
     ],
     '📣  Alerting': [
