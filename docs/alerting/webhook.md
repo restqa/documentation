@@ -17,8 +17,8 @@ Setting a **webhook** url is simple:
 ## Pre-requisite
 
  * 1 minute  🚀
- * Get your cutom endpoint
- * Valid RestQA config file.
+ * Get your custom endpoint
+ * Valid RestQA config file
 
 ## Command 
 
@@ -52,11 +52,11 @@ environments:
 | `headers`    | Object containing the headers to be added into the request                                   | false             |                    |
 
 
-> About the `config.url` we recommend to use the `!env-var` keyword in order to use an [environment variable](/getting-started/environment-variable) and not expose a sensitve url into your configuration.
+> About the `config.url` we recommend to use the `!env-var` keyword. In order to use an [environment variable](/getting-started/environment-variable) and not expose a sensitive url into your configuration.
 
 ## Example
 
-The request body should look like :
+The request body should look like:
 
 ```json
 {
