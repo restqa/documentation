@@ -17,12 +17,20 @@ Setting a **webhook** url is simple:
 ## Pre-requisite
 
  * 1 minute  🚀
- * Get your cutom endpoint
- * Valid RestQA config file.
+ * Get your custom endpoint
+ * Valid RestQA config file
+
+## Command 
+
+In order to install this integration, you can use the command line:
+
+```
+restqa install webhook
+```
 
 ## Configuration 
 
-```yaml
+```yaml title=".restqa.yml"
 environments:
   - name: sandbox
     outputs:
@@ -37,18 +45,18 @@ environments:
 
 ### Options
 
-| *Property*   | *Description*                                                                                | *Default*          |
-|:-------------|:---------------------------------------------------------------------------------------------|:-------------------|
-| `url`        | The webhook url                                                                              |                    |
-| `method`     | The http method to use in order to send the request body                                     | `POST`             |
-| `headers`    | Object containing the headers to be added into the request                                   |                    |
+| *Property*   | *Description*                                                                                | *Required*        | *Default*          |
+|:-------------|:---------------------------------------------------------------------------------------------|:------------------|:-------------------|
+| `url`        | The webhook url                                                                              | true              |                    |
+| `method`     | The http method to use in order to send the request body                                     | false             | `POST`             |
+| `headers`    | Object containing the headers to be added into the request                                   | false             |                    |
 
 
-> About the `config.url` we recommend to use the `!env-var` keyword in order to use an [environment variable](/getting-started/environment-variable) and not expose a sensitve url into your configuration.
+> About the `config.url` we recommend to use the `!env-var` keyword. In order to use an [environment variable](/getting-started/environment-variable) and not expose a sensitive url into your configuration.
 
 ## Example
 
-The request body should look like :
+The request body should look like:
 
 ```json
 {
