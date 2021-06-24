@@ -6,9 +6,9 @@ sidebar_label: Configuration
 
 ## Config File
 
-When running `restqa` from the command line, RestQA will automatically try to resolve a configuration file named `.restqa.yml` inside the project root.
+When running `restqa` from the command line, RestQA automatically tries to resolve a configuration file named `.restqa.yml` inside the project root.
 
-The most basic config file looks like this:
+The most basic configuration file looks like this:
 
 ```yaml title=".restqa.yml"
 version: 0.0.1
@@ -85,7 +85,7 @@ Short description of the tested application.
 * **Type:** `[object]`
 * **Required:** `yes`
 
-Define an environment for your test because since it's a list you can imagine having a different configuration per environment.
+Define an environment for your test since it's a list you can imagine having a different configuration per environment.
 
 
 ### environments[].name
@@ -100,7 +100,7 @@ Environment name (example: local or uat)
 * **Type:** `boolean`
 * **Required:** `yes`
 
-During the execution when a specific environment did not pass, RestQA will pick the environment with the `default` value set to `true`. 
+During the execution when a specific environment did not pass, RestQA picks the environment with the `default` value set to `true`. 
 
 ### environments[].data
 
@@ -149,7 +149,7 @@ Array of outputs to use. Check [Ouputs API](../api/output-api.md) for more detai
 * **Type:** `object`
 * **Required:** `no`
 
-Specific configuration to pass to the RestQA processor
+Specific configuration to pass to the RestQA processor.
 
 ### restqa.timeout
 
@@ -165,7 +165,7 @@ Define the timeout for steps. Default is 5000 milliseconds.
 * **Type:** `object`
 * **Required:** `no`
 
-Define the dashboard configuration
+Define the dashboard configuration.
 
 ### restqa.dashboard.server
 
@@ -187,7 +187,7 @@ Define the location of the test `.feature` files
 * **Type:** `array`
 * **Required:** `no`
 
-List of url, in order to prevent the cors isuue if you run the client and the sever on 2 different location.
+List of url, in order to prevent the cors issue. If you run the client and the server on 2 different location.
 
 ### restqa.dashboard.server.report
 
@@ -202,7 +202,7 @@ This setting is relevant only if you plan to use the [Remote html](../reporting/
 * **Required:** `no`
 * **Default:** `/reports`
 
-Specify the path that you want to use to access the reports stored into your server
+Specify the path that you want to use to access the reports and stored into your server.
 
 ### restqa.dashboard.server.report.outputFolder
 
@@ -210,16 +210,16 @@ Specify the path that you want to use to access the reports stored into your ser
 * **Required:** `no`
 * **Default:** `./reports`
 
-Specify the location where to store the report into your server
+Specify the location where to store the report into your server.
 
 ### restqa.tips
 
 * **Type:** `object`
 * **Required:** `no`
 
-Settings for the small tips that are shared on the output console
+Settings for the small tips that are shared on the output console.
 
-Example
+Example:
 
 ```yaml title=".restqa.yml" {17-20}
 version: 0.0.1
@@ -241,7 +241,7 @@ restqa:
   tips:
     enabled: true
     message:
-    - Guys, do not forget tho git push and commit before leavig the building!
+    - Guys, do not forget tho git push and commit before leaving the building!
 ```
 
 ### restqa.tips.enabled
