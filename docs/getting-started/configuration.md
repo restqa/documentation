@@ -159,12 +159,90 @@ Specific configuration to pass to the RestQA processor
 
 Define the timeout for steps. Default is 5000 milliseconds.
 
+
+### restqa.dashboard
+
+* **Type:** `object`
+* **Required:** `no`
+
+Define the dashboard configuration
+
+### restqa.dashboard.server
+
+* **Type:** `object`
+* **Required:** `no`
+
+Define the dashboard configuration (server side)
+
+### restqa.dashboard.server.testFolder
+
+* **Type:** `string`
+* **Required:** `no`
+* **Default:** `.`
+
+Define the location of the test `.feature` files
+
+### restqa.dashboard.server.whiteLiist
+
+* **Type:** `array`
+* **Required:** `no`
+
+List of url, in order to prevent the cors isuue if you run the client and the sever on 2 different location.
+
+### restqa.dashboard.server.report
+
+* **Type:** `object`
+* **Required:** `no`
+
+This setting is relevant only if you plan to use the [Remote html](../reporting/html-remote.md') to send your report into a custom RestQA server.
+
+### restqa.dashboard.server.report.outputFolder
+
+* **Type:** `string`
+* **Required:** `no`
+* **Default:** `/reports`
+
+Specify the path that you want to use to access the reports stored into your server
+
+### restqa.dashboard.server.report.outputFolder
+
+* **Type:** `string`
+* **Required:** `no`
+* **Default:** `./reports`
+
+Specify the location where to store the report into your server
+
 ### restqa.tips
 
 * **Type:** `object`
 * **Required:** `no`
 
 Settings for the small tips that are shared on the output console
+
+Example
+
+```yaml title=".restqa.yml" {17-20}
+version: 0.0.1
+metadata:
+  code: TIPS EXAMPLE
+  name: Config tips example
+  description: Example to share tipps
+environments:
+  - name: local
+    default: true
+    plugins:
+      - name: restqapi
+        config:
+          url: https://api.restqa.io
+    outputs:
+      - type: html
+        enabled: true
+restqa:
+  tips:
+    enabled: true
+    message:
+    - Guys, do not forget tho git push and commit before leavig the building!
+```
 
 ### restqa.tips.enabled
 
