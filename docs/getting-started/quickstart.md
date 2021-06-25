@@ -137,4 +137,17 @@ And Voila your first test scenario has been executed and passed!
 
 You can see the result into the `./report` folder.
 
+## Access to the RestQA Dashboard
+
+If you are looking for a user friendly interface, take a look at the restqa dashboard, by using the command:
+
+```bash
+restqa dashboard
+```
+
+Example:
+
+![screenshot dashboard](../assets/screenshot-dashboard.png)
+
+[More information on this feature](./dashboard.md)
 
