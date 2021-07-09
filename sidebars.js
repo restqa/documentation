@@ -22,7 +22,8 @@ module.exports = {
       'getting-started/run',
       'getting-started/dashboard',
       'getting-started/plugins',
-      'getting-started/version'
+      'getting-started/version',
+      'getting-started/telemetry'
     ],
     '🎯  Step definition': [
       'tests/introduction',
