@@ -8,7 +8,7 @@ sidebar_label: Artillery.io
 
 :::info
 
-RestQA is running performance test. RestQA is generating Artillery test scenario based on your functional tests
+RestQA is not running performance test. RestQA is generating Artillery test scenario based on your functional tests
 
 :::
 
