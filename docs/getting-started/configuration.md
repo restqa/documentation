@@ -1,10 +1,10 @@
 ---
 id: configuration
-title: Configure your First Test Automation Pipeline
+title: Configuring your First Test Automation Pipeline
 sidebar_label: Configuration
 ---
 
-## Config File
+## Configuration File
 
 When running `restqa` from the command line, RestQA automatically tries to resolve a configuration file named `.restqa.yml` inside the project root.
 
@@ -49,7 +49,7 @@ restqa run --config my-restqa.yml
 * **Required:** `yes`
 
 
-Define which YAML schema version to use to execute the test.
+Define which YAML schema version to use in executing the test.
 Available : `0.0.1`
 
 ### metadata
@@ -114,7 +114,7 @@ Define the data strategy during the test execution.
 * **Type:** `string`
 * **Required:** `yes`
 
-Define the external data source to use as test dataset.
+Identify the external data source to use as test dataset.
 
 ### environments[].data.config
 
@@ -128,7 +128,7 @@ Define the specific configuration related to the external data source.
 * **Type:** `object`
 * **Required:** `no`
 
-Key/Value object that will be loaded into the dataset in order be reused into the test scenarios. 
+Key/Value object that will be loaded into the dataset in order to be reused into test scenarios. 
 
 ### environments[].plugins
 
@@ -149,7 +149,7 @@ Array of outputs to use. Check [Ouputs API](../api/output-api.md) for more detai
 * **Type:** `object`
 * **Required:** `no`
 
-Specific configuration to pass to the RestQA processor.
+Specific configuration to pass to RestQA processor.
 
 ### restqa.timeout
 
@@ -157,7 +157,7 @@ Specific configuration to pass to the RestQA processor.
 * **Required:** `no`
 * **Default:** `5000`
 
-Define the timeout for steps. Default is 5000 milliseconds.
+Decide the timeout for steps. Default is 5000 milliseconds.
 
 
 ### restqa.dashboard
@@ -180,14 +180,14 @@ Define the dashboard configuration (server side)
 * **Required:** `no`
 * **Default:** `.`
 
-Define the location of the test `.feature` files
+Designate the location of the test `.feature` files
 
 ### restqa.dashboard.server.whiteLiist
 
 * **Type:** `array`
 * **Required:** `no`
 
-List of url, in order to prevent the cors issue. If you run the client and the server on 2 different location.
+In order to prevent cors issue, I recommend to list out url. This is in case you run client and server on 2 different location.
 
 ### restqa.dashboard.server.report
 
@@ -202,7 +202,7 @@ This setting is relevant only if you plan to use the [Remote html](../reporting/
 * **Required:** `no`
 * **Default:** `/reports`
 
-Specify the path that you want to use to access the reports and stored into your server.
+Specify the path that you want to access the reports and stored into your server.
 
 ### restqa.dashboard.server.report.outputFolder
 
@@ -226,7 +226,7 @@ version: 0.0.1
 metadata:
   code: TIPS EXAMPLE
   name: Config tips example
-  description: Example to share tipps
+  description: Example to share tips
 environments:
   - name: local
     default: true
@@ -241,7 +241,7 @@ restqa:
   tips:
     enabled: true
     message:
-    - Guys, do not forget tho git push and commit before leaving the building!
+    - Guys, do not forget to git push and commit before leaving the building!
 ```
 
 ### restqa.tips.enabled
@@ -250,12 +250,12 @@ restqa:
 * **Required:** `no`
 * **Default:** `true`
 
-Enabled or disabled the tips
+Enable or disable the tips
 
 ### restqa.tips.messages
 
 * **Type:** `array<string>`
 * **Required:** `no`
 
-Help you to define custom tips.
+Helps you to define custom tips.
 
