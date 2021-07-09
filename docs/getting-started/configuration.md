@@ -258,3 +258,4 @@ Enabled or disabled the tips
 * **Required:** `no`
 
 Help you to define custom tips.
+

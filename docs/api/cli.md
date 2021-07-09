@@ -165,3 +165,28 @@ A few options are available:
 | ---------- | ----- | ------------------------------------------------------------ | --------------|
 | `--config` | `-c` | Specify the configuration file to use                         | `.restqa.yml` |
 | ` --port`  | `-p` | Specify the running http port                                 | 8081          |
+
+
+## Telemetry
+
+The telemetry options can be enabled or disabled as your whishes.
+
+Enable the telemetry:
+
+```bash
+restqa telemetry on
+```
+
+Disable the telemetry:
+
+```bash
+restqa telemetry off
+```
+
+## Environement variable
+
+In order to override some options, you can use the environement variables below:
+
+* `RESTQA_TELEMETRY`: enable or disable the telemetry (value: on | off)
+* `RESTQA_CONFIG`: Define the location of the `.restqa.yml` configuration file
+* `RESTQA_ENV`: Define the environement to select withing the `.restqa.yml`
