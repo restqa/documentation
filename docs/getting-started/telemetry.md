@@ -3,46 +3,46 @@ id: telemetry
 title: Telemetry
 ---
 
-Getting feedback about the actual behavior is important for us in order to improve the RestQA.
+Getting feedback about the actual behavior is important for us in order to improve RestQA.
 
 Then RestQA is collecting a few anonymous usage data. 
 
-While the user will initiate the project for the first time using the command `restqa init`, he will be asked if he is allowing RestQA to collect anonymous data.
-Only if the user answer yes, the data will be collected.
+While the user initiates the project for the first time using the command `restqa init`, user will be ask if he allows RestQA to collect anonymous data.
+Only if the user answer Yes, then data will be collected.
 
-## How to update your consent ?
+## How to update your consent on RestQA?
 
-If you change your mind and do not want RestQA to collect anonymous data you can run the command:
+If you change your mind and do not want RestQA to collect anonymous data, you can run the command:
 
 ```
 restqa telemetry off
 ```
 
-or you can use the environment variable `RESTQA_TELEMETRY` such as:
+Or you can use the environment variable `RESTQA_TELEMETRY` such as:
 
 ```
 RESTQA_TELEMETRY=off restqa run
 ```
 
-## What are we tracking ?
+## What does RestQA tracks?
 
-The information that we are tracking are:
+The information that we track are the following:
 
 * Date
-* command name
-* restqa version
-* node version
-* operating system
-* Dashboard UI actions.
+* Command name
+* RestQA version
+* Node version
+* Operating system
+* Dashboard UI actions
 
-No personal information are tracked.
+No personal information is track.
 
 [Check on the source Code](https://github.com/restqa/restqa/blob/master/bin/restqa)
 
-## Where are we storing the collected data ?
+## Where does RestQA stored the collected data?
 
-As of now we storing the information into google analytics.
+As of now, we store the information in our Google Analytics.
 
-## Any concern ?
+## Any concern or query?
 
-If you have any concern feel free to contact us by [email](contact@restqa.io) or on [discord](https://restqa.io/chat)
+For any concern you might have about consent, feel free to contact us by [email](contact@restqa.io) or on [discord](https://restqa.io/chat)
